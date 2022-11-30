@@ -7,7 +7,7 @@
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="formPage" >
     <!-- Nav Bar-->
     <nav class="navbar">
 
@@ -16,14 +16,14 @@
 
         <div class="nav-links">
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li class="deroulant"><a href="#">Projets</a>
+                <li><a href="/index.html">Accueil</a></li>
+                <li class="deroulant"><a>Projets</a></li>
                     <ul class="sous">
-                        <li> <a href="#">Pimp My Commit</a></li>
+                        <li><a href="#">Pimp My Commit</a></li>
                         <li><a href="#">WGP</a></li>
                         <li><a href="#">Git Busters</a></li>
                     </ul>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/form.html">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -32,10 +32,10 @@
         <!-- Section photo et paragraphe de la personne contactée -->
         <section>
             <div class="membre1">
-                <div class="profilePic">
-                    <img src="pictures/baptiste.jpg" alt="Photo de la personne contactée">
+                <div class="picContainer">
+                    <img class="profilePic" src="pictures/baptiste.jpg" alt="Photo de la personne contactée">
                 </div>
-                </div>
+                <div class="picDescription">
                     <h3>Prénom Nom</h3>
                     <h4>Parcours</h4>
                     <p>Je viens de là</p>
@@ -47,15 +47,15 @@
         <!-- Section formulaire -->
         <section>
             <form>
-                <div class="label"><label for="name">Prénom Nom :</label></div>
-                <input type="text" id="name" name="name"><br>
-                <div class="label"><label for="company">Votre Entreprise :</label></div>
-                <input type="text" id="company" name="company"><br>
-                <div class="label"><label for="email">Votre E-mail :</label></div>
-                <input type="email" id="email" name="email"><br>
-                <div class="label"><label for="message">Votre message :</label></div>
-                <textarea id="message"></textarea><br>
-                <input type="submit" value="Envoyer">
+                <!--<div class="label"><label for="name">Prénom Nom :</label></div>-->
+                <div><input type="text" id="name" name="name" placeholder="Prénom Nom"></div><br>
+                <!--<div class="label"><label for="company">Votre Entreprise :</label></div>-->
+                <div><input type="text" id="company" name="company"></div><br>
+                <!--<div class="label"><label for="email">Votre E-mail :</label></div>-->
+                <div><input type="email" id="email" name="email"></div><br>
+                <!--<div class="label"><label for="message">Votre message :</label></div>-->
+                <div><textarea id="message"></textarea></div><br>
+                <div><input type="submit" value="Envoyer"></div>
             </form>
         </section>
     </main>
