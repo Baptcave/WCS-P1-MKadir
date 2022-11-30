@@ -2,11 +2,36 @@
     --primary-color: #379095;
     --secondary-color: #333D5B;
     --third-color: #E7EDEF;
-
+    --font1: 'Mulish', sans-serif;
+    --font2: 'Amiko', sans-serif;
+    --font3: 'Heebo', sans-serif;
 }
 
 * {
     box-sizing: border-box;
+}
+
+html,
+body,
+main,
+p {
+    margin : 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    font-family: var(--font1);
+}
+
+h3,
+h4,
+h5 {
+    font-family: var(--font2);
+}
+
+p {
+    font-family: var(--font3);
 }
 
 img {
