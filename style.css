@@ -1,3 +1,10 @@
+:root {
+    --primary-color: #379095;
+    --secondary-color: #333D5B;
+    --third-color: #E7EDEF;
+
+}
+
 * {
     box-sizing: border-box;
 }
@@ -22,4 +29,3 @@ img {
         text-align: center;
     }
 }
-
