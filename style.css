@@ -1,1 +1,19 @@
+* {
+    box-sizing: border-box;
+}
 
+@media screen and (max-width: 340px) {
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banniere {
+        height: 50px;
+        width: 100%;
+    }
+
+    .banniere h1 {
+        text-align: center;
+    }
+}
