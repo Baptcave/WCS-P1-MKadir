@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "w3c-html-validator": "^1.2.1"
+  },
+  "scripts": {
+    "validate": "html-validator --quiet"
+  }
+}
