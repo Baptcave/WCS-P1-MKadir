@@ -9,7 +9,7 @@
 
 * {
     box-sizing: border-box;
-    }
+}
 
 html,
 body,
@@ -34,7 +34,7 @@ h5 {
     font-family: var(--font2);
 }
 
-p, 
+p,
 label,
 .input {
     font-family: var(--font3);
@@ -56,7 +56,7 @@ label,
     float: left;
     position: relative;
     padding-right: 200px;
-     text-decoration: none;
+    text-decoration: none;
     list-style: none;
 }
 
@@ -89,6 +89,7 @@ label,
     color: var(--secondary-color);
     background-color: white;
 }
+
 /*fin de barre de navigation*/
 
 /*footer*/
@@ -223,6 +224,7 @@ img {
     margin-right: 4rem;
     margin-bottom: 1rem;
 }
+
 /*FIN SECTION PAGE D'ACCUEIL*/
 
 /*DEBUT SECTION TITRE PROJET*/
@@ -317,7 +319,7 @@ section>h2 {
 }
 
 .membre1,
-.picDescription, 
+.picDescription,
 form {
     display: flex;
     flex-direction: column;
@@ -331,18 +333,20 @@ form {
 }
 
 .picDescription {
-    display : flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     line-height: 1.5;
     font-size: smaller;
 }
 
-.picDescription h3, h4 {
+.picDescription h3,
+h4 {
     margin-top: 0.3rem;
 }
 
-.picDescription h4, p {
+.picDescription h4,
+p {
     align-self: flex-start;
 }
 
@@ -367,7 +371,8 @@ form {
     height: 2.1rem;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     border-radius: 6px;
     border-style: none;
@@ -398,10 +403,11 @@ textarea {
     margin-top: 0.5rem
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     outline: none;
     border-bottom: 2px solid var(--primary-color);
-  }
+}
 
 input.value {
     color: grey;
@@ -414,20 +420,21 @@ input.value {
 
 @media screen and (min-width: 992px) {
 
-/* SECTION KADIR */
+    /* SECTION KADIR */
 
     .descri {
         display: flex;
         justify-content: center;
+        text-align: center;
         margin-top: 2rem;
-        margin-left: 5rem;
-        margin-right: 5rem;
+        margin-left: 25%;
+        margin-right: 25%;
     }
 
     .slider {
         display: none;
     }
-    
+
     #carousel {
         width: 800px;
         height: 400px;
@@ -435,6 +442,9 @@ input.value {
         box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
         position: relative;
         overflow: hidden;
+        margin-top: 2rem;
+        margin-left: 25%;
+        margin-right: 25%;
     }
 
     #container {
@@ -487,13 +497,14 @@ input.value {
     .para {
         display: flex;
         justify-content: center;
+        text-align: center;
         margin-top: 2rem;
-        margin-left: 5rem;
-        margin-right: 5rem;
-   }
-    
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
     /* SECTION EMI */
-    
+
     .DescriptionP {
         display: flex;
         flex-direction: row;
@@ -521,6 +532,3 @@ input.value {
         color: #E7EDEF;
     }
 }
-
-
-
