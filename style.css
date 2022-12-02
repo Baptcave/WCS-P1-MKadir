@@ -35,7 +35,6 @@ img {
 }
 
 /* barre de navigation*/
-
 .navbar {
     margin: 0 auto;
     width: 100%;
@@ -88,74 +87,61 @@ img {
 
 /*barre de navigation*/
 
+/*footer*/
+footer {
+    flex-shrink: 0;
+    border-top: 1px dashed;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: white;
 
+}
 
-@media screen and (max-width: 340px) {
-    section {
-        display: flex;
-        flex-direction: column;
-    }
+/*contenu*/
 
+.contenu-footer {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 50px 0 100px;
+    justify-content: space-around;
+}
 
+.bloc {
+    width: 25%;
+    margin: 0 30px;
+}
 
+/*contenu*/
 
+/*contact*/
+.footer-contact h1,
+.footer-media {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
 
-    /*footer*/
-    footer {
-        flex-shrink: 0;
-        border-top: 1px dashed;
-        width: 100%;
-        background-color: var(--secondary-color);
-        color: white;
+.footer-contact p {
+    padding: 5px 0;
+}
 
-    }
+/*media*/
+.liste-media {
+    list-style-type: none;
+}
 
-    /*contenu*/
+.liste-media img {
+    width: 40px;
+    margin: 10px 10px;
+}
 
-    .contenu-footer {
-        width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        font-size: 20px;
-        padding: 50px 0 100px;
-        justify-content: space-around;
-    }
+.liste-media a {
+    text-decoration: none;
+    color: white;
 
-    .bloc {
-        width: 25%;
-        margin: 0 30px;
-    }
-
-    /*contenu*/
-
-    /*contact*/
-    .footer-contact h1,
-    .footer-media {
-        font-size: 25px;
-        padding-bottom: 20px;
-    }
-
-    .footer-contact p {
-        padding: 5px 0;
-    }
-
-    /*media*/
-    .liste-media {
-        list-style-type: none;
-    }
-
-    .liste-media img {
-        width: 40px;
-        margin: 10px 10px;
-    }
-
-    .liste-media a {
-        text-decoration: none;
-        color: white;
-
-    }
 }
 
 
