@@ -15,24 +15,28 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    <header>
+        <!--BARRE DE NAVIGATION-->
+        <nav class="navbar">
 
-        <a href="#" class="logo">WGP</a>
-        <img src="" alt="logo" width="80px" class="logo" />
+            <a href="#" class="logo"></a>
+            <img src="" alt="logo" width="80px" class="logo" />
 
-        <div class="nav-links">
-            <ul>
-                <li><a href="/index.html">Accueil</a></li>
-                <li class="deroulant"><a>Projets</a></li>
-                    <ul class="sous">
-                        <li><a href="#">Pimp My Commit</a></li>
-                        <li><a href="#">WGP</a></li>
-                        <li><a href="">Git Busters</a></li>
-                    </ul>
-                <li><a href="/form.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li class="deroulant"><a href="#">Projets</a>
+                        <ul class="sub-project">
+                            <li> <a href="#">Pimp My Commit</a></li>
+                            <li><a href="#">WGP</a></li>
+                            <li><a href="#">Git Busters</a></li>
+                        </ul>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--FIN BARRE DE NAVIGATION-->
+    </header>
 
     <!--Section-->
     <main>
@@ -71,8 +75,31 @@
     </main>
 
     <footer>
-        <h1>© 2022 MKADIR</h1>
+    
+        <!--Début -->
+        <div class="contenu-footer">
+            <!--Bloc de médias-->
+            <div class="bloc-footer-medias">
+                <h1>Nos Réseaux</h1>
+                <!--liste des resaux-->
+                <ul class="liste-media">
+                    <li><a hreff="#"> <img src="medias/fb.svg" alt="icones reseaux sociaux">Facebook/monsite</a></li>
+                    <li><a hreff="#"> <img src="medias/instagram.svg" alt="icones reseaux sociaux">Instagram/stuff</a>
+                    </li>
+                    <li><a hreff="#"> <img src="medias/twitter.svg" alt="icones reseaux sociaux">Twitter/lorem</a></li>
+                    <li><a hreff="#"> <img src="medias/github.svg" alt="icones reseaux sociaux">GitHub/HelloWorld</a>
+                    </li>
+                    <li><a hreff="#"> <img src="medias/youtube.svg" alt="icones reseaux sociaux">Youtube/channel</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--fin-->
+        
+<!--mentions legales-->
+        <p>© 2022 MKADIR</p>
     </footer>
+    
     <script>
         document.body.onload = function () {
             nbr = 3;
@@ -115,7 +142,9 @@
         }
     </script>
 
+  
+   
 </body>
-<!--<script src="index.js"></script>-->
+
 
 </html>
