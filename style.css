@@ -34,10 +34,6 @@ p {
     font-family: var(--font3);
 }
 
-img {
-    height: 50px;
-    width: 50px;
-}
 
 section.Project {
     display: flex;
@@ -83,17 +79,42 @@ section.Project {
     color: #E7EDEF;
 }
 
+/*DEBUT SECTION TEAM*/
+section.team {
+    display: flex;
+    flex-direction: column;
+}
+
+.member-picture {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+section>h2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.member {
+    display: flex;
+    justify-content: flex-start;
+    font-size: smaller;
+}
+
+h3,
+h4 {
+    margin: 0;
+}
+/* FIN SECTION TEAM */
+
 @media screen and (min-width: 992px) {
     section {
         display: flex;
         flex-direction: column;
     }
-
-    .banniere {
-        height: 50px;
-        width: 100%;
-    }
-
     .banniere h1 {
         text-align: center;
     }
@@ -125,3 +146,4 @@ section.Project {
         color: #E7EDEF;
     }
 }
+
