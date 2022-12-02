@@ -7,33 +7,59 @@
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body class="formPage" >
+    <!-- Nav Bar-->
+    <nav class="navbar">
+
+        <a href="#" class="logo">WGP</a>
+        <img src="" alt="logo" width="80px" class="logo" />
+
+        <div class="nav-links">
+            <ul>
+                <li><a href="/index.html">Accueil</a></li>
+                <li class="deroulant"><a>Projets</a></li>
+                    <ul class="sous">
+                        <li><a href="#">Pimp My Commit</a></li>
+                        <li><a href="#">WGP</a></li>
+                        <li><a href="#">Git Busters</a></li>
+                    </ul>
+                <li><a href="/form.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Main -->
     <main>
+        <!-- Section photo et paragraphe de la personne contactée -->
         <section>
             <div class="membre1">
-                <div class="profilePic">
-                    <img src="pictures/baptiste.jpg" alt="Photo de la personne contactée">
+                <div class="picContainer">
+                    <img class="profilePic" src="pictures/baptiste.jpg" alt="Photo de la personne contactée">
                 </div>
-                </div>
-                    <h3>Prénom Nom</h3>
-                    <h4>Parcours</h4>
-                    <p>Je viens de là</p>
-                    <h4>Objectifs</h4>
-                    <p>Je vais par là</p>
+                <div class="picDescription">
+                    <div class="descriptionContainer">
+                        <h3>Baptiste Noyé</h3>
+                        <h4>Parcours :</h4>
+                        <p>Après plusieurs études à droite à gauche et 7 ans en tant qu'étalonneur en post-production audiovisuelle, je me reconvertis en 2022 en tant que Développeur Web</p>
+                        <h4>Objectifs :</h4>
+                        <p>Obtenir un CDI dans une chouette boîte en tant que développeur web, ou bien découvrir la data analyse.</p>
+                
+                    </div>
                 </div>
             </div>
         </section>
+        <!-- Section formulaire -->
         <section>
             <form>
-                <div class="label"><label for="name">Prénom Nom :</label></div>
-                <input type="text" id="name" name="name"><br>
-                <div class="label"><label for="company">Votre Entreprise :</label></div>
-                <input type="text" id="company" name="company"><br>
-                <div class="label"><label for="email">Votre E-mail :</label></div>
-                <input type="email" id="email" name="email"><br>
-                <div class="label"><label for="message">Votre message :</label></div>
-                <textarea id="message"></textarea><br>
-                <input type="submit" value="Envoyer">
+                <!--<div class="label"><label for="name">Prénom Nom :</label></div>-->
+                <div class="inputContainer"><input class="input" type="text" id="name" name="name" placeholder="Prénom Nom"></div><br>
+                <!--<div class="label"><label for="company">Votre Entreprise :</label></div>-->
+                <div class="inputContainer"><input class="input" type="text" id="company" name="company" placeholder="Entreprise"></div><br>
+                <!--<div class="label"><label for="email">Votre E-mail :</label></div>-->
+                <div class="inputContainer"><input class="input" type="email" id="email" name="email" placeholder="E-mail"></div><br>
+                <!--<div class="label"><label for="message">Votre message :</label></div>-->
+                <div class="textareaContainer"><textarea class="input" id="message" placeholder="Votre message..."></textarea></div><br>
+                <div class="submitContainer"><input class="submit" type="submit" value="Envoyer"></div>
             </form>
         </section>
     </main>
