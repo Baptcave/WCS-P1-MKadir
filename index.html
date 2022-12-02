@@ -35,22 +35,32 @@
     </nav>
 
     <!--Section-->
-    <section>
+    <main>
         <!--Div bannière + background image ou background color-->
         <div class="banniere">
             <h1>WGP</h1>
-            <img src="" alt="">
         </div>
-        <!--Div premier paragraphe-->
+        <!--Div first paragraphe-->
         <div class="descri">
             <p>Lorem ipsum dolor sit amet. Est animi voluptatem quo facilis error qui dolorum optio et omnis quia et
                 quia quas aut velit unde est possimus porro.</p>
         </div>
         <!--Div carousel (slider des images projet)-->
-        <div class="carousel">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+        <!--<div class="slideshow-container">-->
+        <div class="slider">
+            <div class="slides">
+                <slide class="slide"><img src="pictures/im1.jfif" alt=""></slide>
+                <slide class="slide"><img src="pictures/im2.jfif" alt=""></slide>
+                <slide class="slide"><img src="pictures/im3.jfif" alt=""></slide>
+            </div>
+        </div>
+        <!--Div carousel ecran bureau-->
+        <div id="carousel">
+            <div id="container">
+
+            </div>
+            <img class="bouton" id="d" src="pictures/bouton.png" alt="">
+            <img class="bouton" id="g" src="pictures/bouton.png" alt="">
         </div>
         <!--Div paragraphe-->
         <div class="para">
@@ -58,13 +68,54 @@
                 quia quas aut velit unde est possimus porro. Et itaque distinctio ea adipisci galisum est sint inventore
                 in consectetur sunt.</p>
         </div>
-    </section>
+    </main>
 
     <footer>
         <h1>© 2022 MKADIR</h1>
     </footer>
-
+    <script>
+        document.body.onload = function () {
+            nbr = 3;
+            p = 0;
+            container = document.getElementById("container");
+            g = document.getElementById("g");
+            d = document.getElementById("d");
+            container.style.width = (800 * nbr) + "px";
+            for (i = 1; i <= nbr; i++) {
+                div = document.createElement("div");
+                div.className = "photo";
+                div.style.backgroundImage = "url('pictures/im" + i + ".jfif')";
+                container.appendChild(div);
+            }
+            afficherMasquer();
+        }
+        g.onclick = function () {
+            if (p > -nbr + 1);
+            p--;
+            container.style.transform = "translate(" + p * 800 + "px)";
+            container.style.transition = "all 0.5s ease";
+            afficherMasquer();
+        }
+        d.onclick = function () {
+            if (p < 0);
+            p++;
+            container.style.transform = "translate(" + p * 800 + "px)";
+            container.style.transition = "all 0.5s ease";
+            afficherMasquer();
+        }
+        function afficherMasquer() {
+            if (p == -nbr + 1)
+                g.style.visibility = "hidden";
+            else
+                g.style.visibility = "visible";
+            if (p == 0)
+                d.style.visibility = "hidden";
+            else
+                d.style.visibility = "visible";
+        }
+    </script>
 
 </body>
+<!--<script src="index.js"></script>-->
 
 </html>
