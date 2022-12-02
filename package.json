@@ -1,8 +1,27 @@
 {
+  "name": "projet-gpw",
+  "version": "0.0.1",
+  "description": "Projet 1 WCS",
+  "main": "index.js",
+  "scripts": {
+    "validate": "html-validator --quiet",
+    "test": "echo \"Error: no test specified\" && exit 1"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrRobo1/Projet-GPW.git"
+  },
+  "keywords": [
+    "projet"
+  ],
+  "author": "Kadir, Julien, Nassima, Emeline, Baptiste",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MrRobo1/Projet-GPW/issues"
+  },
+  "homepage": "https://github.com/MrRobo1/Projet-GPW#readme",
   "devDependencies": {
     "w3c-html-validator": "^1.2.1"
-  },
-  "scripts": {
-    "validate": "html-validator --quiet"
   }
 }
