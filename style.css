@@ -15,7 +15,7 @@ html,
 body,
 main,
 p {
-    margin : 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -39,7 +39,51 @@ img {
     width: 50px;
 }
 
-@media screen and (max-width: 340px) {
+section.Project {
+    display: flex;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    flex-direction: column;
+    align-content: stretch;
+}
+
+.Project h1 {
+    margin: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    align-self: center;
+    flex-basis: 100%;
+    color: #333D5B;
+}
+
+.DescriptionP {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #333D5B;
+}
+
+.DescriptionP img {
+    margin: 0.5rem;
+    border-color: #379095;
+    border: 60px;
+    height: auto;
+    width: 50%;
+}
+
+.DescriptionP p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+    color: #E7EDEF;
+}
+
+@media screen and (min-width: 992px) {
     section {
         display: flex;
         flex-direction: column;
@@ -52,5 +96,32 @@ img {
 
     .banniere h1 {
         text-align: center;
+    }
+
+    .DescriptionP {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        align-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+        background-color: #333D5B;
+    }
+
+    .DescriptionP img {
+        margin: 0.5rem;
+        border-color: #379095;
+        border: 60px;
+        height: auto;
+        width: 50%;
+    }
+
+    .DescriptionP p {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 0.8rem;
+        margin-bottom: 0.5rem;
+        color: #E7EDEF;
     }
 }
