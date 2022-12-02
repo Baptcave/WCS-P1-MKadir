@@ -1,4 +1,5 @@
 {
+
   "name": "projet-gpw",
   "version": "0.0.1",
   "description": "Projet 1 WCS",
@@ -25,3 +26,4 @@
     "w3c-html-validator": "^1.2.1"
   }
 }
+

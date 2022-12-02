@@ -19,7 +19,7 @@ h2,
 h3,
 h4,
 p {
-    margin : 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -40,7 +40,91 @@ label,
     font-family: var(--font3);
 }
 
-/* Formulaire */
+/*DEBUT SECTION TITRE PROJET*/
+
+section.Project {
+    display: flex;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    flex-direction: column;
+    align-content: stretch;
+}
+
+.Project h1 {
+    margin: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    align-self: center;
+    flex-basis: 100%;
+    color: #333D5B;
+}
+
+.DescriptionP {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #333D5B;
+}
+
+.DescriptionP img {
+    margin: 0.5rem;
+    border-color: #379095;
+    border: 60px;
+    height: auto;
+    width: 50%;
+}
+
+.DescriptionP p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+    color: #E7EDEF;
+}
+
+/*FIN SECTION TITRE PROJET*/
+
+/*DEBUT SECTION TEAM*/
+
+section.team {
+    display: flex;
+    flex-direction: column;
+}
+
+.member-picture {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+section>h2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.member {
+    display: flex;
+    justify-content: flex-start;
+    font-size: smaller;
+}
+
+.h3-team {
+    margin: 0;
+}
+
+.h4-team {
+    margin: 0;
+}
+
+/* FIN SECTION TEAM */
+
+/* FORMULAIRE */
 
 .formPage {
     background-color: var(--third-color);
@@ -137,3 +221,46 @@ input:focus, textarea:focus {
 input.value {
     color: grey;
 }
+
+/*FIN SECTION FORMULAIRE*/
+
+/*DEBUT MEDIA QUERIES*/
+
+@media screen and (min-width: 992px) {
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    .banniere h1 {
+        text-align: center;
+    }
+
+    .DescriptionP {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        align-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+        background-color: #333D5B;
+    }
+
+    .DescriptionP img {
+        margin: 0.5rem;
+        border-color: #379095;
+        border: 60px;
+        height: auto;
+        width: 50%;
+    }
+
+    .DescriptionP p {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 0.8rem;
+        margin-bottom: 0.5rem;
+        color: #E7EDEF;
+    }
+}
+
+
