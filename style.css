@@ -47,6 +47,19 @@ label,
     align-items: center;
     background-color: var(--secondary-color);
     color: white;
+    width: 100%;
+    height: 4rem;
+}
+
+.menu-hamburger {
+    width: 3rem;
+    height: 3rem;
+    display: none;
+
+}
+
+.mobile-first {
+    display: none;
 }
 
 .brand-title {
@@ -97,24 +110,51 @@ label,
 
 
 
-.navbar .menu-mobile {
-    display: none;
-
-}
-
 
 @media (max-width :600px) {
 
     .navbar {
-        margin: 0;
-        padding: 0;
+        visibility: hidden;
+        margin-left: -100%;
+        transition: all ease 500ms;
+
+
+    }
+
+    .navbar-links {
+        height: 4rem;
+        background-color: red;
+    }
+
+    .mobile-menu {
+        margin-left: 0;
+        visibility: visible;
+        background-color: var(--secondary-color);
+
     }
 
 
 
+    .navbar {
+        width: 100%;
+        height: 2rem;
+        color: var(--secondary-color);
+    }
+
+    .toggle-nav {
+        display: none;
+    }
+
+    .menu-hamburger {
+        position: absolute;
+        display: flex;
+        margin-left: 320px;
+        background-color: var(--primary-color);
+        z-index: 99;
+    }
 
 
-    .navbar .menu-mobile {
+    .navbar .mobile-first {
 
         position: absolute;
         width: 100%;
@@ -126,26 +166,28 @@ label,
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 100%;
-        transition: 1s ease;
+        /*transition: 1s ease;*/
         z-index: 2;
+
 
     }
 
-    .menu-mobile a {
+
+
+    .mobile-first a {
         text-decoration: none;
 
     }
 
 
 
-    .menu-mobile ul {
+    .mobile-first ul {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
 
-    .menu-mobile ul li {
+    .mobile-first ul li {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -153,19 +195,19 @@ label,
 
 
 
-    .navbar .menu-mobile ul li {
+    .navbar .mobile-first ul li {
         margin: 25px 0;
 
     }
 
-    .navbar .menu-mobile ul li a {
+    .navbar .mobile-first ul li a {
         color: var(--secondary-color);
         font-size: 40px;
     }
 
 
 
-    .menu-mobile {
+    .mobile-first {
         display: flex;
     }
 
@@ -193,7 +235,7 @@ footer {
 /*contenu*/
 
 .contenu-footer {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
     height: 20px;
     display: grid;

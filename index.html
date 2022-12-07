@@ -22,37 +22,31 @@
             <div class="brand-title">WGP</div>
 
             <div class="navbar-links">
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li class="deroulant"><a href="#">Projets</a>
-                        <ul class="sub-project">
-                            <li> <a href="#">Pimp My Commit</a></li>
-                            <li><a href="#">WGP</a></li>
-                            <li><a href="#">Git Busters</a></li>
-                        </ul>
-                    <li><a href="#">Contact</a></li>
+                <div class="toggle-nav">
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li class="deroulant"><a href="#">Projets</a>
+                            <ul class="sub-project">
+                                <li> <a href="#">Pimp My Commit</a></li>
+                                <li><a href="#">WGP</a></li>
+                                <li><a href="#">Git Busters</a></li>
+                            </ul>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            </ul>
-            <div class="menu-mobile">
+
+            <div class="mobile-first">
                 <ul>
                     <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Projet Pimp My Commit</a></li>
-                    <li><a href="#">Projet WGP</a></li>
-                    <li><a href="#">Projet Git Busters</a></li>
+                    <li><a href="#">Pimp My Commit</a></li>
+                    <li><a href="#">WGP</a></li>
+                    <li><a href="#">Git Busters</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-            <script>
-                const menuHamburger = document.querySelector("toggle-button")
-                const navLinks = document.querySelector("nav-links")
-
-                menuHamburger.addEventListener('click', () => {
-                    navLinks.classList.toggle('mobile-menu')
-                });
-
-            </script>
-
         </nav>
+        <img src="pictures/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
         <!--FIN BARRE DE NAVIGATION-->
 
     </header>
@@ -111,6 +105,7 @@
 
                     </li>
                 </ul>
+
             </div>
         </div>
         <!--fin-->
@@ -159,6 +154,12 @@
             else
                 d.style.visibility = "visible";
         }
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".navbar")
+
+        menuHamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu')
+        }) 
     </script>
 
 
