@@ -312,6 +312,7 @@ section>h2 {
 
 /* DÉBUT SECTION FORMULAIRE */
 
+.form-member,
 .form-page {
     display: flex;
     flex-direction: column;
@@ -326,7 +327,6 @@ main {
     margin: 0 4%;
 }
 
-.member,
 .pic-description, 
 form {
     display: flex;
@@ -359,16 +359,25 @@ form {
 
 .pic-description {
     line-height: 1.5;
-    font-size: smaller;
+    /* font-size: smaller; */
     width: 100%;
+}
+
+.pic-description h3{
+    margin-top: 16px;
 }
 
 .pic-description h4 {
     margin-top: 0.3rem;
+    margin-bottom: 8px;
+    margin-left: 16px;
+    text-decoration: underline;
 }
 
-.pic-description h4 {
-    text-decoration: underline;
+.pic-description p {
+    margin-left: 24px;
+    margin-bottom: 16px;
+    margin-right: 16px;
 }
 
 .pic-description h4, p {
@@ -380,7 +389,7 @@ form {
     flex-direction: column;
     align-items: center;
     background-color: var(--secondary-color);
-    border-radius: 6px;
+    border-radius: 1rem;
     color: var(--third-color);
     padding: 0.8rem;
 }
@@ -595,7 +604,7 @@ input.value {
         margin: 0 22%;
     }
 
-    .member {
+    .form-member {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -617,6 +626,7 @@ input.value {
 
     .pic-description {
         width: 180%;
+        /* font-size: 1em; */
     }
 
     .input-container {
