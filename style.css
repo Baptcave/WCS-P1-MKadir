@@ -26,18 +26,44 @@ p {
 h1,
 h2 {
     font-family: var(--font1);
+    /*font-size: 3rem;*/
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
 }
 
 h3,
 h4,
 h5 {
     font-family: var(--font2);
+    /*font-size: 1.4rem;*/
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+
+}
+
+
+h5 {
+    font-size: 1.1rem;
 }
 
 p,
 label,
 .input {
     font-family: var(--font3);
+    max-width: 65ch;
+    font-size: .9rem;
 }
 
 /* barre de navigation*/
@@ -257,6 +283,7 @@ section.Project {
     margin-top: 3rem;
     margin-bottom: 1rem;
     align-self: center;
+    text-align: center;
     flex-basis: 100%;
     color: #333D5B;
 }
@@ -313,7 +340,6 @@ section>h2 {
 .member {
     display: flex;
     justify-content: flex-start;
-    font-size: smaller;
 }
 
 .h3-team {
@@ -435,6 +461,36 @@ input.value {
 
 @media screen and (min-width: 992px) {
 
+
+    h1 {
+        font-size: 3.3rem;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    h3 {
+        font-size: 1.7rem;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    p,
+    label,
+    .input {
+        max-width: 75ch;
+        font-size: 1.15rem;
+    }
+
+
     /* SECTION KADIR */
 
     .desc {
@@ -523,6 +579,7 @@ input.value {
         margin-top: 2rem;
         margin-left: 25%;
         margin-right: 25%;
+
     }
 
     /* SECTION EMI */
