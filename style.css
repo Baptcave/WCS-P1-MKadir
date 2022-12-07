@@ -48,6 +48,7 @@ h3 {
     font-size: 1.5rem;
 }
 
+
 h4 {
     font-size: 1.2rem;
 
@@ -61,6 +62,7 @@ h5 {
 p,
 label,
 .input {
+    max-width: 75ch;
     font-family: var(--font3);
     max-width: 65ch;
     font-size: .9rem;
@@ -325,10 +327,15 @@ section.team {
 }
 
 .member-picture {
-    height: 5rem;
-    width: 5rem;
+    min-height: 5rem;
+    min-width: 5rem;
+    max-height: 8rem;
+    max-width: 8rem;
     border-radius: 50%;
     margin: 1rem;
+    align-content: center;
+
+
 }
 
 section>h2 {
@@ -339,15 +346,36 @@ section>h2 {
 
 .member {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    margin: 1.5rem;
+    border-radius: 1rem;
+    color: #fff;
+}
+
+.member-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
 }
 
 .h3-team {
-    margin: 0;
+    margin: 1rem;
+    text-align: center;
 }
 
 .h4-team {
-    margin: 0;
+    margin: .5rem;
+    margin-left: 1rem;
+    text-decoration: underline;
+}
+
+.member p {
+    margin: 1.5rem;
+    margin-top: .5rem;
 }
 
 /* FIN SECTION TEAM */
@@ -489,7 +517,57 @@ input.value {
         max-width: 75ch;
         font-size: 1.15rem;
     }
+  
+  /*DEBUT SECTION TEAM*/
 
+
+    .h2-team {
+        margin-bottom: 2rem;
+    }
+
+
+    .member {
+        height: 20rem;
+        align-items: center;
+        width: 66vw;
+        padding: 1rem;
+        margin: 2rem;
+    }
+
+    .member-left {
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+
+    .member-title {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .member-picture {
+        align-self: center;
+        float: left;
+        min-height: 8rem;
+        min-width: 8rem;
+        max-height: 10rem;
+        max-width: 10rem;
+        margin-right: 4rem;
+        margin-left: 4rem;
+    }
+
+    .member-right {
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        float: right;
+        margin-bottom: 4rem;
+    }
+
+    .h3-team {
+        margin-bottom: .75rem;
+    }
+
+    /* FIN SECTION TEAM */
 
     /* SECTION KADIR */
 
@@ -579,7 +657,6 @@ input.value {
         margin-top: 2rem;
         margin-left: 25%;
         margin-right: 25%;
-
     }
 
     /* SECTION EMI */
