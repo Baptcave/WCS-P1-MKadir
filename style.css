@@ -40,6 +40,12 @@ label,
     font-family: var(--font3);
 }
 
+header {
+    background-color: var(--secondary-color);
+    position: relative;
+    height: 4rem;
+}
+
 /* barre de navigation*/
 .navbar {
     display: flex;
@@ -148,8 +154,9 @@ label,
     .menu-hamburger {
         position: absolute;
         display: flex;
-        margin-left: 320px;
-        background-color: var(--primary-color);
+        right: 1rem;
+        top: 0.5rem;
+
         z-index: 99;
     }
 
@@ -294,7 +301,7 @@ main {
 }
 
 /*image auto slider*/
-img {
+.slide img {
     height: 200px;
     width: 200px;
 }
