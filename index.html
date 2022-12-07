@@ -19,10 +19,14 @@
         <!--BARRE DE NAVIGATION-->
         <nav class="navbar">
 
-            <a href="#" class="logo"></a>
-            <img src="" alt="logo" width="80px" class="logo" />
+            <div class="brand-title">WGP</div>
 
-            <div class="nav-links">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
                 <ul>
                     <li><a href="#">Accueil</a></li>
                     <li class="deroulant"><a href="#">Projets</a>
@@ -34,8 +38,19 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
+            <script>
+                const menuHamburger = document.querySelector("toggle-button")
+                const navLinks = document.querySelector("nav-links")
+
+                menuHamburger.addEventListener('click', () => {
+                    navLinks.classList.toggle('mobile-menu')
+                });
+
+            </script>
+
         </nav>
         <!--FIN BARRE DE NAVIGATION-->
+
     </header>
 
     <!--Section-->
@@ -75,7 +90,7 @@
     </main>
 
     <footer>
-    
+
         <!--Début -->
         <div class="contenu-footer">
             <!--Bloc de médias-->
@@ -89,17 +104,17 @@
                     <li><a hreff="#"> <img src="medias/twitter.svg" alt="icones reseaux sociaux">Twitter/lorem</a></li>
                     <li><a hreff="#"> <img src="medias/github.svg" alt="icones reseaux sociaux">GitHub/HelloWorld</a>
                     </li>
-                    <li><a hreff="#"> <img src="medias/youtube.svg" alt="icones reseaux sociaux">Youtube/channel</a>
+
                     </li>
                 </ul>
             </div>
         </div>
         <!--fin-->
-        
-<!--mentions legales-->
+
+        <!--mentions legales-->
         <p>© 2022 MKADIR</p>
     </footer>
-    
+
     <script>
         document.body.onload = function () {
             nbr = 3;
@@ -142,8 +157,8 @@
         }
     </script>
 
-  
-   
+
+
 </body>
 
 

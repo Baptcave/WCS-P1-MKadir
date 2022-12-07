@@ -9,7 +9,7 @@
 
 * {
     box-sizing: border-box;
-    }
+}
 
 html,
 body,
@@ -34,7 +34,7 @@ h5 {
     font-family: var(--font2);
 }
 
-p, 
+p,
 label,
 .input {
     font-family: var(--font3);
@@ -42,53 +42,164 @@ label,
 
 /* barre de navigation*/
 .navbar {
-    margin: 0 auto;
-    width: 100%;
-    background-color: var(--secondary-color);
-    border: solid, 1px;
     display: flex;
     justify-content: space-between;
-    padding-right: 100px;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: white;
 }
 
-.nav-links li {
-    list-style-type: none;
-    float: left;
-    position: relative;
-    padding-right: 200px;
-     text-decoration: none;
+.brand-title {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    color: var(--primary-color);
+}
+
+
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
     list-style: none;
 }
 
-.nav-links ul li a {
-    color: white;
+.navbar-links li a {
     text-decoration: none;
-    width: 150px;
-    height: 30px;
+    color: var(--primary-color);
+    padding: 1rem;
     display: block;
-    text-align: center;
-    text-shadow: 1px 1px 1px var(--primary-color);
+    padding-right: 10rem;
 }
 
-.nav-links ul ul {
+.navbar-links ul ul {
     position: absolute;
     top: 50 px;
     visibility: hidden;
     top: 30px;
+    flex-direction: column;
+    padding: 1.5rem;
 }
 
-.nav-links ul li:hover ul {
+.navbar-links ul li:hover ul {
     visibility: visible;
 }
 
-.nav-links li:hover {
-    background-color: var(--secondary-color);
+
+
+.navbar-links ul li ul a:hover {
+    color: var(--secondary-color);
+    /*background-color: var(--primary-color);*/
 }
 
-.nav-links ul li ul a:hover {
-    color: var(--secondary-color);
-    background-color: white;
+.toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    z-index: 99;
 }
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+@media (max-width :600px) {
+
+    .navbar {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar .menu-hamburger {
+        display: block;
+    }
+
+
+
+    .navbar-links {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        background-color: transparent;
+        backdrop-filter: blur(7px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100%;
+        transition: 1s ease;
+    }
+
+    .sub-project {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .navbar-links .mobile-menu {
+        margin-left: 0;
+    }
+
+
+
+    .navbar-links ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .navbar .navbar-links ul li {
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+    .navbar .brand-title {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+
+    .toggle-button {
+        position: absolute;
+        top: 0.75rem;
+        right: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+
+    .toggle-button .bar {
+        height: 3px;
+        width: 100%;
+        background-color: var(--secondary-color);
+        border-radius: 10px;
+    }
+
+}
+
 /*fin de barre de navigation*/
 
 /*footer*/
@@ -105,12 +216,13 @@ footer {
 .contenu-footer {
     width: 1200px;
     margin: 0 auto;
-    display: flex;
+    height: 20px;
+    display: grid;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     font-size: 20px;
     padding: 50px 0 100px;
-    justify-content: space-around;
+
 }
 
 .bloc {
@@ -223,6 +335,7 @@ img {
     margin-right: 4rem;
     margin-bottom: 1rem;
 }
+
 /*FIN SECTION PAGE D'ACCUEIL*/
 
 /*DEBUT SECTION TITRE PROJET*/
@@ -317,7 +430,7 @@ section>h2 {
 }
 
 .membre1,
-.picDescription, 
+.picDescription,
 form {
     display: flex;
     flex-direction: column;
@@ -331,18 +444,20 @@ form {
 }
 
 .picDescription {
-    display : flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     line-height: 1.5;
     font-size: smaller;
 }
 
-.picDescription h3, h4 {
+.picDescription h3,
+h4 {
     margin-top: 0.3rem;
 }
 
-.picDescription h4, p {
+.picDescription h4,
+p {
     align-self: flex-start;
 }
 
@@ -367,7 +482,8 @@ form {
     height: 2.1rem;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     border-radius: 6px;
     border-style: none;
@@ -398,10 +514,11 @@ textarea {
     margin-top: 0.5rem
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     outline: none;
     border-bottom: 2px solid var(--primary-color);
-  }
+}
 
 input.value {
     color: grey;
@@ -414,7 +531,7 @@ input.value {
 
 @media screen and (min-width: 992px) {
 
-/* SECTION KADIR */
+    /* SECTION KADIR */
 
     .descri {
         display: flex;
@@ -427,7 +544,7 @@ input.value {
     .slider {
         display: none;
     }
-    
+
     #carousel {
         width: 800px;
         height: 400px;
@@ -490,10 +607,10 @@ input.value {
         margin-top: 2rem;
         margin-left: 5rem;
         margin-right: 5rem;
-   }
-    
+    }
+
     /* SECTION EMI */
-    
+
     .DescriptionP {
         display: flex;
         flex-direction: row;
@@ -521,6 +638,3 @@ input.value {
         color: #E7EDEF;
     }
 }
-
-
-
