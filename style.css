@@ -9,7 +9,7 @@
 
 * {
     box-sizing: border-box;
-    }
+}
 
 html,
 body,
@@ -26,18 +26,43 @@ p {
 h1,
 h2 {
     font-family: var(--font1);
+    /*font-size: 3rem;*/
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
 }
 
 h3,
 h4,
 h5 {
     font-family: var(--font2);
+    /*font-size: 1.4rem;*/
 }
 
-p, 
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+p,
 label,
 .input {
     font-family: var(--font3);
+    max-width: 65ch;
+    font-size: .9rem;
 }
 
 /* barre de navigation*/
@@ -56,7 +81,7 @@ label,
     float: left;
     position: relative;
     padding-right: 200px;
-     text-decoration: none;
+    text-decoration: none;
     list-style: none;
 }
 
@@ -89,6 +114,7 @@ label,
     color: var(--secondary-color);
     background-color: white;
 }
+
 /*fin de barre de navigation*/
 
 /*footer*/
@@ -223,6 +249,7 @@ img {
     margin-right: 4rem;
     margin-bottom: 1rem;
 }
+
 /*FIN SECTION PAGE D'ACCUEIL*/
 
 /*DEBUT SECTION TITRE PROJET*/
@@ -240,6 +267,7 @@ section.Project {
     margin-top: 3rem;
     margin-bottom: 1rem;
     align-self: center;
+    text-align: center;
     flex-basis: 100%;
     color: #333D5B;
 }
@@ -296,7 +324,6 @@ section>h2 {
 .member {
     display: flex;
     justify-content: flex-start;
-    font-size: smaller;
 }
 
 .h3-team {
@@ -317,7 +344,7 @@ section>h2 {
 }
 
 .membre1,
-.picDescription, 
+.picDescription,
 form {
     display: flex;
     flex-direction: column;
@@ -331,18 +358,20 @@ form {
 }
 
 .picDescription {
-    display : flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     line-height: 1.5;
     font-size: smaller;
 }
 
-.picDescription h3, h4 {
+.picDescription h3,
+h4 {
     margin-top: 0.3rem;
 }
 
-.picDescription h4, p {
+.picDescription h4,
+p {
     align-self: flex-start;
 }
 
@@ -367,7 +396,8 @@ form {
     height: 2.1rem;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     border-radius: 6px;
     border-style: none;
@@ -398,10 +428,11 @@ textarea {
     margin-top: 0.5rem
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     outline: none;
     border-bottom: 2px solid var(--primary-color);
-  }
+}
 
 input.value {
     color: grey;
@@ -414,7 +445,35 @@ input.value {
 
 @media screen and (min-width: 992px) {
 
-/* SECTION KADIR */
+    h1 {
+        font-size: 3.3rem;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    h3 {
+        font-size: 1.7rem;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    p,
+    label,
+    .input {
+        max-width: 75ch;
+        font-size: 1.15rem;
+    }
+
+    /* SECTION KADIR */
 
     .descri {
         display: flex;
@@ -427,7 +486,7 @@ input.value {
     .slider {
         display: none;
     }
-    
+
     #carousel {
         width: 800px;
         height: 400px;
@@ -490,10 +549,10 @@ input.value {
         margin-top: 2rem;
         margin-left: 5rem;
         margin-right: 5rem;
-   }
-    
+    }
+
     /* SECTION EMI */
-    
+
     .DescriptionP {
         display: flex;
         flex-direction: row;
@@ -521,6 +580,3 @@ input.value {
         color: #E7EDEF;
     }
 }
-
-
-
