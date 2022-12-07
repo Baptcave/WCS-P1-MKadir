@@ -46,187 +46,116 @@ header {
     height: 4rem;
 }
 
-/* barre de navigation*/
+
+
+
+
+/*section nassima - mobile first*/
+
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--secondary-color);
-    color: white;
-    width: 100%;
-    height: 4rem;
+    visibility: hidden;
+    margin-left: -100%;
+    transition: all ease 500ms;
+
+
 }
+
+.navbar-links {
+    height: 4rem;
+    background-color: var(--secondary-color);
+}
+
+.mobile-menu {
+    margin-left: 0;
+    visibility: visible;
+    background-color: var(--secondary-color);
+
+}
+
+
+
+.navbar {
+    width: 100%;
+    height: 2rem;
+    color: var(--secondary-color);
+}
+
+
 
 .menu-hamburger {
-    width: 3rem;
-    height: 3rem;
-    display: none;
-
-}
-
-.mobile-first {
-    display: none;
-}
-
-.brand-title {
-    font-size: 1.5rem;
-    margin: 0.5rem;
-    color: var(--primary-color);
-}
-
-
-
-.navbar-links ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.navbar-links li {
-    list-style: none;
-}
-
-.navbar-links li a {
-    text-decoration: none;
-    color: var(--primary-color);
-    padding: 1rem;
-    display: block;
-    padding-right: 10rem;
-}
-
-.navbar-links ul ul {
     position: absolute;
-    top: 50 px;
-    visibility: hidden;
-    top: 30px;
+    display: flex;
+    right: 1rem;
+    top: 0.5rem;
+
+    z-index: 99;
+}
+
+
+.navbar .mobile-first {
+
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    backdrop-filter: blur(7px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*transition: 1s ease;*/
+    z-index: 2;
+
+
+}
+
+
+
+.mobile-first a {
+    text-decoration: none;
+
+}
+
+
+
+.mobile-first ul {
+    display: flex;
     flex-direction: column;
-    padding: 1.5rem;
+    width: 100%;
 }
 
-.navbar-links ul li:hover ul {
-    visibility: visible;
+.mobile-first ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
-.navbar-links ul li ul a:hover {
+.navbar .mobile-first ul li {
+    margin: 25px 0;
+
+}
+
+.navbar .mobile-first ul li a {
     color: var(--secondary-color);
-    /*background-color: var(--primary-color);*/
+    font-size: 40px;
 }
 
 
 
 
-@media (max-width :600px) {
 
-    .navbar {
-        visibility: hidden;
-        margin-left: -100%;
-        transition: all ease 500ms;
-
-
-    }
-
-    .navbar-links {
-        height: 4rem;
-        background-color: red;
-    }
-
-    .mobile-menu {
-        margin-left: 0;
-        visibility: visible;
-        background-color: var(--secondary-color);
-
-    }
-
-
-
-    .navbar {
-        width: 100%;
-        height: 2rem;
-        color: var(--secondary-color);
-    }
-
-    .toggle-nav {
-        display: none;
-    }
-
-    .menu-hamburger {
-        position: absolute;
-        display: flex;
-        right: 1rem;
-        top: 0.5rem;
-
-        z-index: 99;
-    }
-
-
-    .navbar .mobile-first {
-
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        top: 0;
-        right: 0;
-        background-color: transparent;
-        backdrop-filter: blur(7px);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /*transition: 1s ease;*/
-        z-index: 2;
-
-
-    }
-
-
-
-    .mobile-first a {
-        text-decoration: none;
-
-    }
-
-
-
-    .mobile-first ul {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .mobile-first ul li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-
-    .navbar .mobile-first ul li {
-        margin: 25px 0;
-
-    }
-
-    .navbar .mobile-first ul li a {
-        color: var(--secondary-color);
-        font-size: 40px;
-    }
-
-
-
-    .mobile-first {
-        display: flex;
-    }
-
-    .navbar .brand-title {
-        position: absolute;
-        top: 50px;
-        left: 50px;
-    }
-
-
-
+.navbar .brand-title {
+    position: absolute;
+    top: 50px;
+    left: 50px;
 }
+
+
+
+
 
 /*fin de barre de navigation*/
 
@@ -560,6 +489,79 @@ input.value {
 /*DEBUT MEDIA QUERIES*/
 
 @media screen and (min-width: 992px) {
+
+    /*SECTION NASSIMA*/
+    /* barre de navigation*/
+
+
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--secondary-color);
+        color: white;
+        width: 100%;
+        height: 4rem;
+    }
+
+    .menu-hamburger {
+        width: 3rem;
+        height: 3rem;
+        display: none;
+
+    }
+
+
+
+    .brand-title {
+        font-size: 1.5rem;
+        margin: 0.5rem;
+        color: var(--primary-color);
+
+    }
+
+    .toggle-nav {
+        display: initial;
+    }
+
+    .navbar-links ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .navbar-links li {
+        list-style: none;
+    }
+
+    .navbar-links li a {
+        text-decoration: none;
+        color: var(--primary-color);
+        padding: 1rem;
+        display: block;
+        padding-right: 10rem;
+    }
+
+    .navbar-links ul ul {
+        position: absolute;
+        top: 50px;
+        top: 30px;
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    .navbar-links ul li:hover ul {
+        visibility: visible;
+    }
+
+
+
+    .navbar-links ul li ul a:hover {
+        color: var(--secondary-color);
+        /*background-color: var(--primary-color);*/
+    }
+
 
     /* SECTION KADIR */
 
