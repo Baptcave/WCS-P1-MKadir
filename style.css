@@ -26,12 +26,37 @@ p {
 h1,
 h2 {
     font-family: var(--font1);
+    /*font-size: 3rem;*/
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
 }
 
 h3,
 h4,
 h5 {
     font-family: var(--font2);
+    /*font-size: 1.4rem;*/
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+
+h4 {
+    font-size: 1.2rem;
+
+}
+
+
+h5 {
+    font-size: 1.1rem;
 }
 
 p,
@@ -39,6 +64,8 @@ label,
 .input {
     max-width: 75ch;
     font-family: var(--font3);
+    max-width: 65ch;
+    font-size: .9rem;
 }
 
 /* barre de navigation*/
@@ -144,22 +171,25 @@ footer {
 
 main {
     display: flex;
+    align-items: center;
     flex-direction: column;
+    background-color: var(--third-color);
 }
 
-.banniere {
+.title {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--primary-color);
+    background-color: var(--third-color);
     height: 50px;
     width: 100%;
+    margin-top: 3rem;
 }
 
-.descri {
-    margin-top: 1rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
+.desc {
+    margin-top: 2rem;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 /*image auto slider*/
@@ -170,6 +200,18 @@ img {
 
 .bouton {
     display: none;
+}
+
+.border {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 357px;
+    background-color: var(--secondary-color);
+    border-radius: 34% 66% 70% 30% / 30% 30% 70% 70%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .slider {
@@ -220,10 +262,10 @@ img {
 .para {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    margin-bottom: 1rem;
+    margin-top: 0.50rem;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 2rem;
 }
 
 /*FIN SECTION PAGE D'ACCUEIL*/
@@ -243,6 +285,7 @@ section.Project {
     margin-top: 3rem;
     margin-bottom: 1rem;
     align-self: center;
+    text-align: center;
     flex-basis: 100%;
     color: #333D5B;
 }
@@ -315,6 +358,7 @@ section>h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 
 }
 
@@ -445,7 +489,36 @@ input.value {
 
 @media screen and (min-width: 992px) {
 
-    /*DEBUT SECTION TEAM*/
+
+    h1 {
+        font-size: 3.3rem;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    h3 {
+        font-size: 1.7rem;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    p,
+    label,
+    .input {
+        max-width: 75ch;
+        font-size: 1.15rem;
+    }
+  
+  /*DEBUT SECTION TEAM*/
 
 
     .h2-team {
@@ -498,12 +571,17 @@ input.value {
 
     /* SECTION KADIR */
 
-    .descri {
+    .desc {
         display: flex;
         justify-content: center;
+        text-align: center;
         margin-top: 2rem;
-        margin-left: 5rem;
-        margin-right: 5rem;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .border {
+        display: none;
     }
 
     .slider {
@@ -517,6 +595,9 @@ input.value {
         box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
         position: relative;
         overflow: hidden;
+        margin-top: 2rem;
+        margin-left: 25%;
+        margin-right: 25%;
     }
 
     #container {
@@ -535,9 +616,12 @@ input.value {
     .bouton {
         display: inline-block;
         position: absolute;
-        width: 70px;
+        width: 100px;
+        height: 100px;
         cursor: pointer;
         top: 150px;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     #g {
@@ -548,7 +632,7 @@ input.value {
     }
 
     #d {
-        left: 0;
+        right: 0;
         opacity: 0.4;
         transform: rotate(180deg);
         transition: all 0.3s ease;
@@ -569,9 +653,10 @@ input.value {
     .para {
         display: flex;
         justify-content: center;
+        text-align: center;
         margin-top: 2rem;
-        margin-left: 5rem;
-        margin-right: 5rem;
+        margin-left: 25%;
+        margin-right: 25%;
     }
 
     /* SECTION EMI */
