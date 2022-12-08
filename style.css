@@ -186,7 +186,6 @@ footer p {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-
 }
 
 /*fin footer*/
@@ -481,7 +480,6 @@ form {
     text-decoration: underline;
 }
 
-
 .pic-description p {
     margin-left: 24px;
     margin-bottom: 16px;
@@ -543,13 +541,11 @@ p {
     height: 2.1rem;
 }
 
-
 .input-container,
 .textarea-container {
     width: 100%;
     max-width: 550px;
 }
-
 
 input,
 textarea {
@@ -600,11 +596,9 @@ textarea:focus {
     border-bottom: 2px solid var(--primary-color);
 }
 
-
 .submit:focus {
     border-bottom: none;
 }
-
 
 input.value {
     color: lightgrey;
@@ -635,7 +629,6 @@ input.value {
         width: 3rem;
         height: 3rem;
         display: none;
-
     }
 
     .brand-title {
@@ -653,9 +646,6 @@ input.value {
         padding: 0;
         display: flex;
     }
-
-
-
 
     .navbar-links li {
         list-style: none;
@@ -711,9 +701,7 @@ input.value {
         background-color: var(--secondary-color);
         display: flex;
         flex-direction: center;
-
     }
-
 
     .mobile-first {
         visibility: hidden;
@@ -778,7 +766,6 @@ input.value {
     .h2-team {
         margin-bottom: 2rem;
     }
-
 
     .member {
         height: 20rem;
@@ -943,7 +930,6 @@ input.value {
         margin-bottom: 0.5rem;
         color: var(--third-color);
     }
-
 
     /* SECTION FORMULAIRE */
 
