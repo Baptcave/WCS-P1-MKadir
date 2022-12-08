@@ -63,7 +63,6 @@ p,
 a,
 label,
 .input {
-    max-width: 75ch;
     font-family: var(--font3);
     max-width: 65ch;
     font-size: .9rem;
@@ -170,7 +169,7 @@ footer {
 
 /* DÉBUT SECTION PAGE D'ACCUEIL */
 
-main {
+.index-main {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -395,7 +394,7 @@ section>h2 {
     max-width: 550px;
 }
 
-main {
+.form-main {
     margin: 0 4%;
 }
 
@@ -475,15 +474,16 @@ p {
     justify-content: center;
     height: 1.9rem;
     margin-top: 0.3rem;
-    margin-right: 0.3rem;
+    margin-right: 1.2rem;
     /* border: 2px black solid; */
 }
 
 .social-button {
     background-color: var(--third-color);
-    border-radius: 6%;
+    border-radius: 6px;
     border-style: none;
-    padding: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    padding-top: 0.35rem;
 }
 
 .social-button a {
@@ -496,7 +496,7 @@ p {
 .social-button:hover {
     outline: none;
     border: 2px solid var(--primary-color);
-    border-radius: 6%;
+    border-radius: 6px;
 }
 
 .input-container {
@@ -525,6 +525,11 @@ input {
     line-height: 1.5;
 }
 
+.input,
+textarea {
+    max-width: 90ch;
+}
+
 .textarea-container {
     height: 10rem;
 }
@@ -540,6 +545,10 @@ textarea {
     margin-bottom: 2rem;
 }
 
+/* .submit:hover {
+    border: 2px solid var(--secondary-color);
+} */
+
 .submit-container {
     align-self: flex-end;
     margin-top: 0.5rem;
@@ -549,6 +558,10 @@ input:focus,
 textarea:focus {
     outline: none;
     border-bottom: 2px solid var(--primary-color);
+}
+
+.submit:focus {
+    border-bottom: none;
 }
 
 input.value {
@@ -585,6 +598,8 @@ input.value {
     }
 
     p,
+    a,
+    .submit,
     label,
     .input {
         max-width: 75ch;
@@ -768,7 +783,7 @@ input.value {
         max-width: 100%;
     }
 
-    main {
+    .form-main {
         margin: 0 22%;
     }
 
@@ -799,10 +814,16 @@ input.value {
 
     .input-container {
         max-width: 450px;
+        height: 2.5rem;
     }
 
     form {
         align-items: stretch;
+    }
+
+    .input,
+    textarea {
+        max-width: 100%;
     }
 
     .textarea-container {
