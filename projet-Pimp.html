@@ -16,23 +16,43 @@
 
 
 <body>
-    <nav class="navbar">
-        <a href="#" class="logo">WGP</a>
-        <img src="" alt="logo" width="80px" class="logo" />
+    <header>
+        <!--BARRE DE NAVIGATION-->
+        <nav class="navbar">
 
-        <div class="nav-links">
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li class="deroulant"><a href="#">Projets</a>
-                    <ul class="sous">
-                        <li> <a href="#">Pimp My Commit</a></li>
-                        <li><a href="#">WGP</a></li>
-                        <li><a href="#">Git Busters</a></li>
-                    </ul>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+            <div class="brand-title">WGP</div>
+
+            <div class="navbar-links">
+
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#">Projets</a>
+                        <ul class="sub-project">
+                            <li> <a href="projet-Pimp.html">Pimp My Commit</a></li>
+                            <li><a href="projet-GPW.html">WGP</a></li>
+                            <li><a href="projet-Git.html">Git Busters</a></li>
+                        </ul>
+                    <li><a href="form.html">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <div class="mobile-first">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="projet-Pimp.html">Pimp My Commit</a></li>
+                    <li><a href="projet-GPW.html">WGP</a></li>
+                    <li><a href="projet-Git.html">Git Busters</a></li>
+                    <li><a href="form.html">Contact</a></li>
+                </ul>
+            </div>
+
+        </nav>
+        <img src="pictures/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
+        <!--FIN BARRE DE NAVIGATION-->
+        <div class="logo">
+
+    </header>
 
     <section class="Project">
         <h1>TECH NEWS PAPER</h1>
@@ -152,7 +172,19 @@
 
 </body>
 <footer>
-    &copy 2022 MKDIR
+
+    <!--Début -->
+
+    <p>© 2022 MKADIR</p>
+    <!--fin-->
 </footer>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".mobile-first")
+
+    menuHamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-menu')
+    }) 
+</script>
 
 </html>
