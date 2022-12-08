@@ -1,10 +1,19 @@
-// const imageLink = document.querySelector(".image-link");
-// const projectName = document.querySelector(".h3-team");
-// const formName = document.querySelector(".form-name");
-// const memberPicture = document.querySelector(".member-picture");
+// MENU HAMBURGER
 
-// // projectName.addEventListener('click', 
-// //     function() {
-// //         projectName.style.color = "red";
-// //     }
-// // );
+const menuHamburger = document.querySelector(".menu-hamburger")
+const navLinks = document.querySelector(".mobile-first")
+
+menuHamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('mobile-menu')
+})
+
+// FORM MESSAGE
+
+const message = "Merci de m'avoir contacté ! Je vous répondrai dès que possible !";
+
+const submitButton = document.querySelector(".submit");
+
+submitButton.addEventListener("click", function(event) {
+  event.preventDefault();
+  alert(message);
+});
