@@ -194,7 +194,7 @@ main {
 }
 
 /*image auto slider*/
-img {
+.slides img {
     height: 200px;
     width: 200px;
 }
@@ -299,15 +299,16 @@ section.Project {
     align-items: center;
     align-content: center;
     justify-content: center;
-    background-color: #333D5B;
+    background-color: var(--secondary-color);
 }
 
 .DescriptionP img {
     margin: 0.5rem;
-    border-color: #379095;
+    border-color: var(--primary-color);
     border: 60px;
     height: auto;
-    width: 50%;
+    width: auto;
+    height: 2rem;
 }
 
 .DescriptionP p {
@@ -315,7 +316,7 @@ section.Project {
     margin-right: 2rem;
     margin-top: 0.8rem;
     margin-bottom: 0.5rem;
-    color: #E7EDEF;
+    color: var(--third-color);
 }
 
 /*FIN SECTION TITRE PROJET*/
@@ -387,8 +388,8 @@ section>h2 {
 .form-page {
     display: flex;
     flex-direction: column;
-     align-items: center;
-} 
+    align-items: center;
+}
 
 .form-page section {
     max-width: 550px;
@@ -398,7 +399,7 @@ main {
     margin: 0 4%;
 }
 
-.pic-description, 
+.pic-description,
 form {
     display: flex;
     flex-direction: column;
@@ -434,7 +435,7 @@ form {
     width: 100%;
 }
 
-.pic-description h3{
+.pic-description h3 {
     margin-top: 16px;
 }
 
@@ -451,12 +452,13 @@ form {
     margin-right: 16px;
 }
 
-.pic-description h4, p {
+.pic-description h4,
+p {
     align-self: flex-start;
 }
 
 .description-container {
-    display : flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--secondary-color);
@@ -509,7 +511,8 @@ form {
     max-width: 550px;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     border-radius: 6px;
     border-style: none;
@@ -587,8 +590,8 @@ input.value {
         max-width: 75ch;
         font-size: 1.15rem;
     }
-  
-  /*DEBUT SECTION TEAM*/
+
+    /*DEBUT SECTION TEAM*/
 
 
     .h2-team {
@@ -739,23 +742,24 @@ input.value {
         align-items: center;
         align-content: center;
         justify-content: space-evenly;
-        background-color: #333D5B;
+        background-color: var(--secondary-color);
     }
 
     .DescriptionP img {
-        margin: 0.5rem;
-        border-color: #379095;
-        border: 60px;
+        margin: 2rem;
+        border-color: var(--primary-color);
+        border: 3rem;
         height: auto;
-        width: 50%;
+        width: 34%;
     }
 
     .DescriptionP p {
+        align-self: center;
         margin-left: 2rem;
         margin-right: 2rem;
         margin-top: 0.8rem;
         margin-bottom: 0.5rem;
-        color: #E7EDEF;
+        color: var(--third-color);
     }
 
     /* SECTION FORMULAIRE */
@@ -794,7 +798,7 @@ input.value {
     }
 
     .input-container {
-        max-width: 450px;   
+        max-width: 450px;
     }
 
     form {
