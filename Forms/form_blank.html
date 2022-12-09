@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 
-<body>
+<body class="body-blank-form">
     <header>
         <!--BARRE DE NAVIGATION-->
         <nav class="navbar">
 
-            <div class="brand-title">WGP</div>
+            <div class="logo">
+                <img src="../pictures/logo wgp 1.png" alt="Logo de l'équipe projet">
+            </div>
 
             <div class="navbar-links">
 
@@ -22,9 +24,9 @@
                     <li><a href="../index.html">Accueil</a></li>
                     <li><a href="#">Projets</a>
                         <ul class="sub-project">
-                            <li> <a href="../projet-pimp.html">Pimp My Commit</a></li>
-                            <li><a href="../projet-GPW.html">WGP</a></li>
-                            <li><a href="../projet-Git.html">Git Busters</a></li>
+                            <li><a href="projet-pimp.html">TECH NEWS PAPER</a></li>
+                            <li><a href="projet-GPW.html">WILD GEEK PROJECT</a></li>
+                            <li><a href="projet-Git.html">TROMBINOSCOPE NUMERIQUE</a></li>
                         </ul>
                     <li><a href="form_blank.html">Contact</a></li>
                 </ul>
@@ -34,9 +36,9 @@
             <div class="mobile-first">
                 <ul>
                     <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="../projet-pimp.html">Pimp My Commit</a></li>
-                    <li><a href="../projet-GPW.html">WGP</a></li>
-                    <li><a href="../projet-Git.html">Git Busters</a></li>
+                    <li><a href="projet-pimp.html">TECH NEWS PAPER</a></li>
+                    <li><a href="projet-GPW.html">WILD GEEK PROJECT</a></li>
+                    <li><a href="projet-Git.html">TROMBINOSCOPE NUMERIQUE</a></li>
                     <li><a href="form_blank.html">Contact</a></li>
                 </ul>
             </div>
@@ -44,58 +46,30 @@
         </nav>
         <img src="../pictures/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
         <!--FIN BARRE DE NAVIGATION-->
-        <div class="logo">
 
     </header>
     <!-- Main -->
-    <main class="form-page">
-        <div class="form-main ">
-            <!-- Section photo et paragraphe de la personne contactée -->
-            <!-- <section>
-            <div class="form-member">
-            
-                <div class="pic-container">
-                    <img class="profile-pic" src="../pictures/baptiste_cercle.png" alt="Photo de la personne contactée">
-                </div>
-                <div class="pic-description">
-                    <div class="description-container">
-                        <h3>BAPTISTE NOYÉ</h3>
-                        <h4>Parcours :</h4>
-                        <p>Après plusieurs études à droite à gauche et 7 ans en tant qu'étalonneur en post-production audiovisuelle, je me reconvertis en 2022 en tant que Développeur Web</p>
-                        <h4>Objectifs :</h4>
-                        <p>Obtenir un CDI dans une chouette boîte en tant que développeur web, ou bien découvrir la data analyse.</p>
-                        <div class="button-container">
-                            <button class="social-button" type="button">
-                                <a href="https://www.linkedin.com/in/baptistenoye/" target="_blank">LinkedIn</a>
-                            </button>
-                        </div>
-                
-                    </div>
-                </div>
-                
-            </div>
-        </section>  -->
-            <!-- Section formulaire -->
-            <section>
-                <form>
-                    <!--<div class="label"><label for="name">Prénom Nom :</label></div>-->
-                    <div class="input-container"><input class="input" type="text" id="name" name="name"
-                            placeholder="Prénom Nom"></div><br>
-                    <!--<div class="label"><label for="company">Votre Entreprise :</label></div>-->
-                    <div class="input-container"><input class="input" type="text" id="company" name="company"
-                            placeholder="Entreprise"></div><br>
-                    <!--<div class="label"><label for="email">Votre E-mail :</label></div>-->
-                    <div class="input-container"><input class="input" type="email" id="email" name="email"
-                            placeholder="E-mail"></div><br>
-                    <!--<div class="label"><label for="message">Votre message :</label></div>-->
-                    <div class="textarea-container"><textarea class="input" id="message"
-                            placeholder="Votre message..."></textarea></div><br>
-                    <div class="submit-container"><input class="submit" type="submit" value="Envoyer"></div>
-                </form>
-            </section>
-        </div>
+    <main class="blank-form-page">
+        <form class="blank-form">
+            <!--<div class="label"><label for="name">Prénom Nom :</label></div>-->
+            <div class="input-container"><input class="input" type="text" id="name" name="name" placeholder="Prénom Nom">
+            </div><br>
+            <!--<div class="label"><label for="company">Votre Entreprise :</label></div>-->
+            <div class="input-container"><input class="input" type="text" id="company" name="company"
+                    placeholder="Entreprise"></div><br>
+            <!--<div class="label"><label for="email">Votre E-mail :</label></div>-->
+            <div class="input-container"><input class="input" type="email" id="email" name="email" placeholder="E-mail">
+            </div><br>
+            <!--<div class="label"><label for="message">Votre message :</label></div>-->
+            <div class="textarea-container"><textarea class="input" id="message" placeholder="Votre message..."></textarea>
+            </div><br>
+            <div class="submit-container"><input class="submit" type="submit" value="Envoyer"></div>
+        </form>
     </main>
     <script src="../get-to-form.js"></script>
+    <footer>
+        <p>&copy 2022 MKADIR</p>
+    </footer>
 </body>
 
 </html>
