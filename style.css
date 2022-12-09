@@ -169,8 +169,10 @@ header {
 }
 
 .navbar .mobile-first ul li a {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-size: 25px;
+    text-shadow: 20%;
+    font-weight: bold;
 
 }
 
@@ -192,6 +194,7 @@ footer p {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    max-width: 100%;
 }
 
 /*fin footer*/
@@ -226,7 +229,7 @@ footer p {
 
 /*image auto slider*/
 
-.slide img {
+.slides img {
 
     height: 200px;
     width: 200px;
@@ -239,6 +242,7 @@ footer p {
 .border {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 350px;
     height: 357px;
     background-color: var(--secondary-color);
@@ -441,6 +445,20 @@ section>h2 {
     margin: 0 4%;
 }
 
+.blank-form {
+    width: 60vw;
+}
+
+.blank-form-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blank-form-page section {
+    width: 100%;
+    max-width: 550px;
+}
 
 .pic-description,
 form {
@@ -491,6 +509,7 @@ form {
     margin-bottom: 8px;
     margin-left: 16px;
     text-decoration: underline;
+    text-underline-offset: .4rem;
 }
 
 .pic-description p {
@@ -567,7 +586,7 @@ textarea {
     border-style: none;
     font-size: 0.8rem;
     padding: 0.2rem 0.5rem;
-    background-color: var(--third-color);
+    background-color: white;
 }
 
 input {
@@ -681,6 +700,7 @@ input.value {
 
     .navbar-links li a:hover {
         color: var(--third-color);
+        background-color: var(--secondary-color);
     }
 
     .navbar-links ul ul {
@@ -701,19 +721,23 @@ input.value {
         left: 0px;
         padding: 0px;
         color: var(--secondary-colo--r);
-        /*background-color: var(--primary-color);*/
+    background-color: var(--secondary-color);
     }
 
     .sub-project li a {
         display: block;
         color: var(--third-color);
+        width: 60%;
+        margin-left: 3rem;
     }
+    
 
     .sub-project li a:hover {
         color: var(--third-color);
         background-color: var(--secondary-color);
         display: flex;
         flex-direction: center;
+        margin-right: 10rem;
     }
 
     .mobile-first {
@@ -724,17 +748,17 @@ input.value {
 
     /*  début footer */
 
+   
     footer {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
         background: transparent;
-        height: auto;
-        width: 100vw;
-        padding-top: 40px;
+        width: 100%;
         color: #fff;
     }
+
+    footer p {
+        max-width: 100%;
+    }
+
 
     /*fin footer*/
 

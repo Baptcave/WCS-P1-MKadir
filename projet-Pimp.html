@@ -16,23 +16,45 @@
 
 
 <body>
-    <nav class="navbar">
-        <a href="#" class="logo">WGP</a>
-        <img src="" alt="logo" width="80px" class="logo" />
+    <header>
+        <!--BARRE DE NAVIGATION-->
+        <nav class="navbar">
 
-        <div class="nav-links">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li class="deroulant"><a href="#">Projets</a>
-                    <ul class="sous">
-                        <li> <a href="projet-pimp.html">Pimp My Commit</a></li>
-                        <li><a href="projet-GPW.html">WGP</a></li>
-                        <li><a href="projet-Git.html">Git Busters</a></li>
-                    </ul>
-                <li><a href="Forms/form_blank.html">Contact</a></li>
-            </ul>
+            <div class="brand-title">WGP</div>
+
+            <div class="navbar-links">
+
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#">Projets</a>
+                        <ul class="sub-project">
+                            <li> <a href="projet-pimp.html">Pimp My Commit</a></li>
+                            <li><a href="projet-GPW.html">WGP</a></li>
+                            <li><a href="projet-Git.html">Git Busters</a></li>
+                        </ul>
+                    <li><a href="Forms/form_blank.html">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <div class="mobile-first">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="projet-pimp.html">Pimp My Commit</a></li>
+                    <li><a href="projet-GPW.html">WGP</a></li>
+                    <li><a href="projet-Git.html">Git Busters</a></li>
+                    <li><a href="Forms/form_blank.html">Contact</a></li>
+                </ul>
+            </div>
+
+        </nav>
+        <img src="pictures/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
+        <!--FIN BARRE DE NAVIGATION-->
+        <div class="logo">
+            <img src="pictures/logo wgp 1.png" alt="Logo de l'équipe projet">
         </div>
-    </nav>
+
+    </header>
 
     <section class="Project">
         <h1>TECH NEWS PAPER</h1>
@@ -41,7 +63,7 @@
             <p>Le projet de l'équipe Pimp My Commit consiste à la réalisation d'un format numérique d'un journal de
                 veille
                 sur les dernières actualités du monde de la technologie, du digital et de l'informatique. Au sein de
-                leur site internet, on peut y retrouver des catégories de domaines pour une navigation facilitée, ainsi
+                leur site internet, on peut retrouver des catégories pour une navigation facilitée, ainsi
                 qu'un aperçu en haut de page sur les derniers articles mis en ligne.</p>
         </div>
     </section>
@@ -53,12 +75,12 @@
             <div class="member member-left">
                 <div class="member-title">
                     <h3 class="h3-team">Léa GIANGROSSO</h3>
-                    <img class="member-picture" src="pictures/Nassima.webp" alt="">
+                    <a class="image-link" href="Forms/form_lea.html"><img class="member-picture" src="pictures/av 1.png" alt="avatar 1"></a>
                 </div>
                 <div class="description">
                     <h4 class="h4-team">Parcours:</h4>
-                    <p>Après plusieurs année dans la photgraphie, évènementielle et pour la presse politique, et un
-                        emploi en tant que professeure de danse à Paris, j'ai décidé de changer de tout au tout.
+                    <p>Après plusieurs année dans la photographie, évènementielle et pour la presse politique, et un
+                        emploi en tant que professeure de danse à Paris, j'ai décidé de changer du tout au tout.
                         Curieuse de l'informatique et du codage de site internet, j'ai décidé de me diriger vers le
                         développement web.
                     </p>
@@ -72,7 +94,7 @@
                 <div class="member member-right">
                     <div class="member-title">
                         <h3 class="h3-team">Jean-Philippe ROBLOT</h3>
-                        <img class="member-picture" src="pictures/Nassima.webp" alt="">
+                        <a class="image-link" href="Forms/form_jean_philippe.html"><img class="member-picture" src="pictures/av 2.png" alt="avatar 2"></a>
                     </div>
                     <div class="description">
                         <h4 class="h4-team">Parcours:</h4>
@@ -92,7 +114,7 @@
                     <div class="member member-left">
                         <div class="member-title">
                             <h3 class="h3-team">Iris GÉNÉVRIER</h3>
-                            <img class="member-picture" src="pictures/Nassima.webp" alt="">
+                            <a class="image-link" href="Forms/form_iris.html"><img class="member-picture" src="pictures/av 4.png" alt="avatar 4"></a>
                         </div>
                         <div class="description">
                             <h4 class="h4-team">Parcours:</h4>
@@ -112,7 +134,7 @@
                         <div class="member member-right">
                             <div class="member-title">
                                 <h3 class="h3-team">Yohann DELETREZ</h3>
-                                <img class="member-picture" src="pictures/Nassima.webp" alt="">
+                                <a class="image-link" href="Forms/form_yohann.html"><img class="member-picture" src="pictures/av 7.png" alt="avatar 7"></a>
                             </div>
                             <div class="description">
                                 <h4 class="h4-team">Parcours:</h4>
@@ -131,7 +153,7 @@
                             <div class="member member-left">
                                 <div class="member-title">
                                     <h3 class="h3-team">Fransceco TURELLO</h3>
-                                    <img class="member-picture" src="pictures/Nassima.webp" alt="">
+                                    <a class="image-link" href="Forms/form_fransceco.html"><img class="member-picture" src="pictures/av 5.png" alt="avatar 5"></a>
                                 </div>
                                 <div class="description">
                                     <h4 class="h4-team">Parcours:</h4>
@@ -149,10 +171,12 @@
                         </div>
     </Section>
 
+    <script src="get-to-form.js"></script>
+    <footer>
+        <p>© 2022 MKADIR</p>
+    </footer>
 
 </body>
-<footer>
-    &copy 2022 MKDIR
-</footer>
+
 
 </html>

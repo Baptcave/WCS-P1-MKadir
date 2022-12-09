@@ -24,7 +24,7 @@
             <div class="navbar-links">
 
                 <ul>
-                    <li><a href="#">Accueil</a></li>
+                    <li><a href="index.html">Accueil</a></li>
                     <li><a href="#">Projets</a>
                         <ul class="sub-project">
                             <li> <a href="projet-pimp.html">Pimp My Commit</a></li>
@@ -38,11 +38,11 @@
 
             <div class="mobile-first">
                 <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Pimp My Commit</a></li>
-                    <li><a href="#">WGP</a></li>
-                    <li><a href="#">Git Busters</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="projet-pimp.html">Pimp My Commit</a></li>
+                    <li><a href="projet-GPW.html">WGP</a></li>
+                    <li><a href="projet-Git.html">Git Busters</a></li>
+                    <li><a href="Forms/form_blank.html">Contact</a></li>
                 </ul>
             </div>
 
@@ -50,16 +50,14 @@
         <img src="pictures/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
         <!--FIN BARRE DE NAVIGATION-->
         <div class="logo">
+            <img src="pictures/logo wgp 1.png" alt="Logo de l'équipe projet">
+        </div>
 
     </header>
 
     <!--Section-->
-    <main>
-        <!--Div bannière + background image ou background color-->
-
-
-
-        </div>
+    <main class="index-main">
+        <h1 class="title">Wild Geek Project</h1>
         <!--Div first paragraphe-->
         <div class="desc">
             <p>A la Wild Code School, les formations sont rythmées par la réalisation personnelle d'exercices, le
@@ -71,9 +69,9 @@
         <div class="border">
             <div class="slider">
                 <div class="slides">
-                    <slide class="slide"><img src="pictures/im1.jfif" alt=""></slide>
-                    <slide class="slide"><img src="pictures/im2.jfif" alt=""></slide>
-                    <slide class="slide"><img src="pictures/im3.jfif" alt=""></slide>
+                    <slide class="slide"><a href="projet-pimp.html"><img src="pictures/im1.jfif" alt="screen projet pimp"></a></slide>
+                    <slide class="slide"><a href="projet-GPW.html"><img src="pictures/im2.jfif" alt="screen projet gpw"></a></slide>
+                    <slide class="slide"><a href="projet-Git.html"><img src="pictures/im3.jfif" alt="screen projet git"></a></slide>
                 </div>
             </div>
         </div>
@@ -140,12 +138,6 @@
             else
                 d.style.visibility = "visible";
         }
-        const menuHamburger = document.querySelector(".menu-hamburger")
-        const navLinks = document.querySelector(".mobile-first")
-
-        menuHamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('mobile-menu')
-        }) 
     </script>
 
 
