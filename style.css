@@ -39,6 +39,9 @@ h1 {
     font-size: 2rem;
 }
 
+.title {
+    color: var(--secondary-color)
+}
 h2 {
     font-size: 1.8rem;
 }
@@ -115,6 +118,7 @@ header {
     width: 100%;
     height: 2rem;
     color: var(--secondary-color);
+    background-color: (var(--backgroundGradient));
 }
 
 
@@ -126,6 +130,11 @@ header {
     z-index: 99;
     width: 2.5rem;
 
+}
+.logo img {
+    height: 3.5rem;
+    margin-left: 2rem;
+    margin-top: 0.3rem;
 }
 
 .navbar .mobile-first {
@@ -338,7 +347,7 @@ section.Project {
     align-items: center;
     align-content: center;
     justify-content: center;
-    background-color: var(--secondary-color);
+    background: var(--backgroundGradient);
 }
 
 .DescriptionP img {
@@ -347,7 +356,7 @@ section.Project {
     border: 60px;
     height: auto;
     width: auto;
-    height: 2rem;
+    height: 10rem;
 }
 
 .DescriptionP p {
@@ -356,6 +365,8 @@ section.Project {
     margin-top: 0.8rem;
     margin-bottom: 0.5rem;
     color: var(--third-color);
+    text-align: center;
+    align-self: center;
 }
 
 /*FIN SECTION TITRE PROJET*/
@@ -378,10 +389,11 @@ section.team {
 
 }
 
-section>h2 {
+.h2-team {
     display: flex;
     justify-content: center;
     width: 100%;
+    color: var(--secondary-color)
 }
 
 .member {
@@ -437,6 +449,7 @@ section>h2 {
     align-items: center;
 }
 
+
 .form-page section {
     max-width: 550px;
 }
@@ -453,11 +466,15 @@ section>h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
 }
 
 .blank-form-page section {
-    width: 100%;
     max-width: 550px;
+}
+
+.blank-form-member {
+    width: 100%;
 }
 
 .pic-description,
@@ -528,7 +545,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--secondary-color);
+    background: var(--backgroundGradient);
     border-radius: 1rem;
     color: var(--third-color);
     padding: 0.8rem;
@@ -663,43 +680,51 @@ input.value {
         display: none;
     }
 
-    .brand-title {
-        font-size: 1.5rem;
-        margin: 0.5rem;
-        color: var(--primary-color);
+    .logo img {
+        height: 3.5rem;
+        margin-left: 2rem;
+        margin-top: 0.3rem;
     }
 
     .navbar-links {
         display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
     }
 
     .navbar-links ul {
         margin: 0;
         padding: 0;
         display: flex;
+        align-content: center;
     }
 
     .navbar-links li {
         list-style: none;
         position: relative;
         float: left;
+        align-content: center;
+        align-items: center;
     }
 
     .navbar-links ul li a {
         text-decoration: none;
-        color: var(--primary-color);
-        display: block;
+        color: var(--third-color);
+        display: flex;
         justify-content: space-between;
+        align-self: center;
+        align-items: center;
         text-align: center;
         width: 150px;
         height: 25%;
-        font-size: xx-large;
+        font-size: x-large;
         margin-right: 200px;
-        margin-top: 17px;
+        margin-top: 1.5rem;
     }
 
     .navbar-links li a:hover {
-        color: var(--third-color);
+        color: var(--primary-color);
         background-color: var(--secondary-color);
     }
 
@@ -725,19 +750,22 @@ input.value {
     }
 
     .sub-project li a {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         color: var(--third-color);
-        width: 60%;
+        width: 100%;
         margin-left: 3rem;
     }
     
 
     .sub-project li a:hover {
-        color: var(--third-color);
+        color: var(--primary-color);
         background-color: var(--secondary-color);
         display: flex;
-        flex-direction: center;
-        margin-right: 10rem;
+        flex-direction: column;
+        align-self: center;
+        margin-right: 3rem;
     }
 
     .mobile-first {

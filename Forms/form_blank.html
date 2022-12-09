@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 
-<body>
+<body class="body-blank-form">
     <header>
         <!--BARRE DE NAVIGATION-->
         <nav class="navbar">
 
-            <div class="brand-title">WGP</div>
+            <div class="logo">
+                <img src="../pictures/logo wgp 1.png" alt="Logo de l'équipe projet">
+            </div>
 
             <div class="navbar-links">
 
@@ -22,9 +24,9 @@
                     <li><a href="../index.html">Accueil</a></li>
                     <li><a href="#">Projets</a>
                         <ul class="sub-project">
-                            <li> <a href="../projet-pimp.html">Pimp My Commit</a></li>
-                            <li><a href="../projet-GPW.html">WGP</a></li>
-                            <li><a href="../projet-Git.html">Git Busters</a></li>
+                            <li><a href="projet-pimp.html">TECH NEWS PAPER</a></li>
+                            <li><a href="projet-GPW.html">WILD GEEK PROJECT</a></li>
+                            <li><a href="projet-Git.html">TROMBINOSCOPE NUMERIQUE</a></li>
                         </ul>
                     <li><a href="form_blank.html">Contact</a></li>
                 </ul>
@@ -34,9 +36,9 @@
             <div class="mobile-first">
                 <ul>
                     <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="../projet-pimp.html">Pimp My Commit</a></li>
-                    <li><a href="../projet-GPW.html">WGP</a></li>
-                    <li><a href="../projet-Git.html">Git Busters</a></li>
+                    <li><a href="projet-pimp.html">TECH NEWS PAPER</a></li>
+                    <li><a href="projet-GPW.html">WILD GEEK PROJECT</a></li>
+                    <li><a href="projet-Git.html">TROMBINOSCOPE NUMERIQUE</a></li>
                     <li><a href="form_blank.html">Contact</a></li>
                 </ul>
             </div>
@@ -44,35 +46,25 @@
         </nav>
         <img src="../pictures/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
         <!--FIN BARRE DE NAVIGATION-->
-        <div class="logo">
-            <img src="pictures/logo wgp 1.png" alt="Logo de l'équipe projet">
-        </div>
 
     </header>
     <!-- Main -->
     <main class="blank-form-page">
-        <div class="blank-form-main ">
-            <div class="form-member">
-                <section>
-                    <form class="blank-form">
-                        <!--<div class="label"><label for="name">Prénom Nom :</label></div>-->
-                        <div class="input-container"><input class="input" type="text" id="name" name="name"
-                                placeholder="Prénom Nom"></div><br>
-                        <!--<div class="label"><label for="company">Votre Entreprise :</label></div>-->
-                        <div class="input-container"><input class="input" type="text" id="company" name="company"
-                                placeholder="Entreprise"></div><br>
-                        <!--<div class="label"><label for="email">Votre E-mail :</label></div>-->
-                        <div class="input-container"><input class="input" type="email" id="email" name="email"
-                                placeholder="E-mail">
-                        </div><br>
-                        <!--<div class="label"><label for="message">Votre message :</label></div>-->
-                        <div class="textarea-container"><textarea class="input" id="message"
-                                placeholder="Votre message..."></textarea></div><br>
-                        <div class="submit-container"><input class="submit" type="submit" value="Envoyer"></div>
-                    </form>
-                </section>
-            </div>
-        </div>
+        <form class="blank-form">
+            <!--<div class="label"><label for="name">Prénom Nom :</label></div>-->
+            <div class="input-container"><input class="input" type="text" id="name" name="name" placeholder="Prénom Nom">
+            </div><br>
+            <!--<div class="label"><label for="company">Votre Entreprise :</label></div>-->
+            <div class="input-container"><input class="input" type="text" id="company" name="company"
+                    placeholder="Entreprise"></div><br>
+            <!--<div class="label"><label for="email">Votre E-mail :</label></div>-->
+            <div class="input-container"><input class="input" type="email" id="email" name="email" placeholder="E-mail">
+            </div><br>
+            <!--<div class="label"><label for="message">Votre message :</label></div>-->
+            <div class="textarea-container"><textarea class="input" id="message" placeholder="Votre message..."></textarea>
+            </div><br>
+            <div class="submit-container"><input class="submit" type="submit" value="Envoyer"></div>
+        </form>
     </main>
     <script src="../get-to-form.js"></script>
     <footer>

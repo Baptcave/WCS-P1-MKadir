@@ -19,7 +19,9 @@
         <!--BARRE DE NAVIGATION-->
         <nav class="navbar">
 
-            <div class="brand-title">WGP</div>
+            <div class="logo">
+                <img src="pictures/logo wgp 1.png" alt="Logo de l'équipe projet">
+            </div>
 
             <div class="navbar-links">
 
@@ -27,9 +29,9 @@
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="#">Projets</a>
                         <ul class="sub-project">
-                            <li> <a href="projet-pimp.html">Pimp My Commit</a></li>
-                            <li><a href="projet-GPW.html">WGP</a></li>
-                            <li><a href="projet-Git.html">Git Busters</a></li>
+                            <li> <a href="projet-pimp.html">TECH NEWS PAPER</a></li>
+                            <li><a href="projet-GPW.html">WILD GEEK PROJECT</a></li>
+                            <li><a href="projet-Git.html">TROMBINOSCOPE NUMERIQUE</a></li>
                         </ul>
                     <li><a href="Forms/form_blank.html">Contact</a></li>
                 </ul>
@@ -39,9 +41,9 @@
             <div class="mobile-first">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="projet-pimp.html">Pimp My Commit</a></li>
-                    <li><a href="projet-GPW.html">WGP</a></li>
-                    <li><a href="projet-Git.html">Git Busters</a></li>
+                    <li><a href="projet-pimp.html">TECH NEWS PAPER</a></li>
+                    <li><a href="projet-GPW.html">WILD GEEK PROJECT</a></li>
+                    <li><a href="projet-Git.html">TROMBINOSCOPE NUMERIQUE</a></li>
                     <li><a href="Forms/form_blank.html">Contact</a></li>
                 </ul>
             </div>
@@ -49,9 +51,7 @@
         </nav>
         <img src="pictures/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
         <!--FIN BARRE DE NAVIGATION-->
-        <div class="logo">
-            <img src="pictures/logo wgp 1.png" alt="Logo de l'équipe projet">
-        </div>
+        
 
     </header>
 
@@ -70,8 +70,8 @@
             <div class="slider">
                 <div class="slides">
                     <slide class="slide"><a href="projet-pimp.html"><img src="pictures/im1.jfif" alt="screen projet pimp"></a></slide>
-                    <slide class="slide"><a href="projet-GPW.html"><img src="pictures/im2.jfif" alt="screen projet gpw"></a></slide>
-                    <slide class="slide"><a href="projet-Git.html"><img src="pictures/im3.jfif" alt="screen projet git"></a></slide>
+                    <slide class="slide"><a href="projet-GPW.html"><img src="pictures/pr2.jpg" alt="screen projet gpw"></a></slide>
+                    <slide class="slide"><a href="projet-Git.html"><img src="pictures/pr1.JPG" alt="screen projet git"></a></slide>
                 </div>
             </div>
         </div>
@@ -109,7 +109,7 @@
             for (i = 1; i <= nbr; i++) {
                 div = document.createElement("div");
                 div.className = "photo";
-                div.style.backgroundImage = "url('pictures/im" + i + ".jfif')";
+                div.style.backgroundImage = "url('pictures/pr" + i + ".JPG')";
                 container.appendChild(div);
             }
             afficherMasquer();
