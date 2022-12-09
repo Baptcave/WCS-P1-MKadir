@@ -5,10 +5,16 @@
     --font1: 'Mulish', sans-serif;
     --font2: 'Amiko', sans-serif;
     --font3: 'Heebo', sans-serif;
+    --backgroundSolid: var(--primary-color);
+    --backgroundGradient: linear-gradient(135deg, var(--secondary-color) 40%, var(--primary-color) 100%);
 }
 
 * {
     box-sizing: border-box;
+}
+
+html {
+    background: var(--third-color);
 }
 
 html,
@@ -362,7 +368,6 @@ section.team {
     min-width: 5rem;
     max-height: 8rem;
     max-width: 8rem;
-    border-radius: 50%;
     margin: 1rem;
     align-content: center;
 
@@ -379,10 +384,17 @@ section>h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--secondary-color);
     margin: 1.5rem;
     border-radius: 1rem;
+    transition: transform .2s;
     color: #fff;
+    background: var(--backgroundGradient);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.member:hover {
+    transform: scale(1.05);
 }
 
 .member-title {
@@ -402,6 +414,7 @@ section>h2 {
     margin: .5rem;
     margin-left: 1rem;
     text-decoration: underline;
+    text-underline-offset: .4rem;
 }
 
 .member p {
@@ -768,7 +781,6 @@ input.value {
     }
 
     .member {
-        height: 20rem;
         align-items: center;
         width: 66vw;
         padding: 1rem;
@@ -911,7 +923,9 @@ input.value {
         align-items: center;
         align-content: center;
         justify-content: space-evenly;
-        background-color: var(--secondary-color);
+        background: var(--backgroundSolid);
+        background: var(--backgroundGradient);
+
     }
 
     .DescriptionP img {
