@@ -5,10 +5,16 @@
     --font1: 'Mulish', sans-serif;
     --font2: 'Amiko', sans-serif;
     --font3: 'Heebo', sans-serif;
+    --backgroundSolid: var(--primary-color);
+    --backgroundGradient: linear-gradient(135deg, var(--secondary-color) 40%, var(--primary-color) 100%);
 }
 
 * {
     box-sizing: border-box;
+}
+
+html {
+    background: var(--third-color);
 }
 
 html,
@@ -313,9 +319,10 @@ section.team {
 }
 
 .member-picture {
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50%;
+    min-height: 5rem;
+    min-width: 5rem;
+    max-height: 8rem;
+    max-width: 8rem;
     margin: 1rem;
 }
 
@@ -327,8 +334,27 @@ section>h2 {
 
 .member {
     display: flex;
-    justify-content: flex-start;
-    font-size: smaller;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.5rem;
+    border-radius: 1rem;
+    transition: transform .2s;
+    color: #fff;
+    background: var(--backgroundGradient);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.member:hover {
+    transform: scale(1.05);
+}
+
+.member-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
 }
 
 .h3-team {
@@ -336,7 +362,10 @@ section>h2 {
 }
 
 .h4-team {
-    margin: 0;
+    margin: .5rem;
+    margin-left: 1rem;
+    text-decoration: underline;
+    text-underline-offset: .4rem;
 }
 
 /* FIN SECTION TEAM */
@@ -370,12 +399,23 @@ form {
     font-size: smaller;
 }
 
-.picDescription h3,
-h4 {
+.pic-description h3 {
+    margin-top: 16px;
+}
+
+
+.pic-description h4 {
     margin-top: 0.3rem;
 }
 
-.picDescription h4,
+.pic-description p {
+    margin-left: 24px;
+    margin-bottom: 16px;
+    margin-right: 16px;
+}
+
+.pic-description h4,
+
 p {
     align-self: flex-start;
 }
@@ -399,6 +439,12 @@ form {
     /* border-style: solid;
     border-width: 1px; */
     height: 2.1rem;
+}
+
+.input-container,
+.textarea-container {
+    width: 100%;
+    max-width: 550px;
 }
 
 input,
@@ -439,6 +485,10 @@ textarea:focus {
     border-bottom: 2px solid var(--primary-color);
 }
 
+.submit:focus {
+    border-bottom: none;
+}
+
 input.value {
     color: grey;
 }
@@ -467,7 +517,6 @@ input.value {
         width: 3rem;
         height: 3rem;
         display: none;
-
     }
 
     .brand-title {
@@ -485,9 +534,6 @@ input.value {
         padding: 0;
         display: flex;
     }
-
-
-
 
     .navbar-links li {
         list-style: none;
@@ -553,7 +599,6 @@ input.value {
 
     }
 
-
     .mobile-first {
         visibility: hidden;
     }
@@ -568,8 +613,65 @@ input.value {
         color: #fff;
     }
 
-    footer p {
-        display: flex;
+    /*fin footer*/
+
+    /* FIN SECTION NASSIMA*/
+
+    /* SECTION KADIR */
+
+
+    h1 {
+        font-size: 3.3rem;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    h3 {
+        font-size: 1.7rem;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    p,
+    a,
+    .submit,
+    label,
+    .input {
+        max-width: 75ch;
+        font-size: 1.15rem;
+    }
+
+    /*DEBUT SECTION TEAM*/
+
+
+    .h2-team {
+        margin-bottom: 2rem;
+    }
+
+    .member {
+        align-items: center;
+        width: 66vw;
+        padding: 1rem;
+        margin: 2rem;
+    }
+
+    .member-left {
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+
+    .member-title {
+        flex-direction: column-reverse;
+        align-items: center;
         justify-content: center;
         background-color: var(--secondary-color)
     }
@@ -666,7 +768,9 @@ input.value {
         align-items: center;
         align-content: center;
         justify-content: space-evenly;
-        background-color: #333D5B;
+        background: var(--backgroundSolid);
+        background: var(--backgroundGradient);
+
     }
 
     .DescriptionP img {
@@ -684,4 +788,58 @@ input.value {
         margin-bottom: 0.5rem;
         color: #E7EDEF;
     }
+
+    /* SECTION FORMULAIRE */
+
+    .form-page section {
+        max-width: 100%;
+    }
+
+    .form-main {
+        margin: 0 22%;
+    }
+
+    .form-member {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        margin-top: 2rem;
+        /*border: solid;*/
+    }
+
+    .pic-container {
+        display: flex;
+        align-content: center;
+    }
+
+    .profile-pic {
+        height: 12rem;
+        width: 12rem;
+        /*border: solid;*/
+    }
+
+    .pic-description {
+        width: 180%;
+        /* font-size: 1em; */
+    }
+
+    .input-container {
+        max-width: 450px;
+        height: 2.5rem;
+    }
+
+    form {
+        align-items: stretch;
+    }
+
+    .input,
+    textarea {
+        max-width: 100%;
+    }
+
+    .textarea-container {
+        max-width: 100%;
+    }
+
 }
