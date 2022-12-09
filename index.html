@@ -19,30 +19,46 @@
         <!--BARRE DE NAVIGATION-->
         <nav class="navbar">
 
-            <a href="#" class="logo"></a>
-            <img src="" alt="logo" width="80px" class="logo" />
+            <div class="brand-title">WGP</div>
 
-            <div class="nav-links">
+            <div class="navbar-links">
+
                 <ul>
                     <li><a href="#">Accueil</a></li>
-                    <li class="deroulant"><a href="index.html">Projets</a>
+                    <li><a href="#">Projets</a>
                         <ul class="sub-project">
-                            <li> <a href="#">Pimp My Commit</a></li>
-                            <li><a href="#">WGP</a></li>
-                            <li><a href="#">Git Busters</a></li>
+                            <li> <a href="projet-pimp.html">Pimp My Commit</a></li>
+                            <li><a href="projet-GPW.html">WGP</a></li>
+                            <li><a href="projet-Git.html">Git Busters</a></li>
                         </ul>
-                    <li><a href="form.html">Contact</a></li>
+                    <li><a href="Forms/form_blank.html">Contact</a></li>
                 </ul>
             </div>
+
+
+            <div class="mobile-first">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Pimp My Commit</a></li>
+                    <li><a href="#">WGP</a></li>
+                    <li><a href="#">Git Busters</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
         </nav>
+        <img src="pictures/menu-btn.png" alt="menu hamburger" class="menu-hamburger">
         <!--FIN BARRE DE NAVIGATION-->
+        <div class="logo">
+
     </header>
 
     <!--Section-->
     <main>
-        <!--Div title + background image or background color-->
-        <div class="title">
-            <h1>Wild Geek Project</h1>
+        <!--Div bannière + background image ou background color-->
+
+
+
         </div>
         <!--Div first paragraphe-->
         <div class="desc">
@@ -79,27 +95,9 @@
     <footer>
 
         <!--Début -->
-        <div class="contenu-footer">
-            <!--Bloc de médias-->
-            <div class="bloc-footer-medias">
-                <h1>Nos Réseaux</h1>
-                <!--liste des resaux-->
-                <ul class="liste-media">
-                    <li><a hreff="#"> <img src="medias/fb.svg" alt="icones reseaux sociaux">Facebook/monsite</a></li>
-                    <li><a hreff="#"> <img src="medias/instagram.svg" alt="icones reseaux sociaux">Instagram/stuff</a>
-                    </li>
-                    <li><a hreff="#"> <img src="medias/twitter.svg" alt="icones reseaux sociaux">Twitter/lorem</a></li>
-                    <li><a hreff="#"> <img src="medias/github.svg" alt="icones reseaux sociaux">GitHub/HelloWorld</a>
-                    </li>
-                    <li><a hreff="#"> <img src="medias/youtube.svg" alt="icones reseaux sociaux">Youtube/channel</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!--fin-->
 
-        <!--mentions legales-->
         <p>© 2022 MKADIR</p>
+        <!--fin-->
     </footer>
 
     <script>
@@ -142,10 +140,17 @@
             else
                 d.style.visibility = "visible";
         }
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".mobile-first")
+
+        menuHamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu')
+        }) 
     </script>
 
 
-
+<script src="index.js"></script>
+<script src="get-to-form.js"></script>
 </body>
 
 

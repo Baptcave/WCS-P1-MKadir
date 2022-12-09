@@ -61,6 +61,7 @@ h4 {
 }
 
 
+
 h5 {
     font-size: 1.1rem;
 }
@@ -69,114 +70,138 @@ p,
 a,
 label,
 .input {
-    max-width: 75ch;
     font-family: var(--font3);
     max-width: 65ch;
     font-size: .9rem;
 }
 
-/* barre de navigation*/
-.navbar {
-    margin: 0 auto;
-    width: 100%;
+header {
     background-color: var(--secondary-color);
-    border: solid, 1px;
-    display: flex;
-    justify-content: space-between;
-    padding-right: 100px;
-}
-
-.nav-links li {
-    list-style-type: none;
-    float: left;
     position: relative;
-    padding-right: 200px;
-    text-decoration: none;
-    list-style: none;
+
+    height: 4rem;
+
 }
 
-.nav-links ul li a {
-    color: white;
-    text-decoration: none;
-    width: 150px;
-    height: 30px;
-    display: block;
-    text-align: center;
-    text-shadow: 1px 1px 1px var(--primary-color);
+
+
+
+
+/*SECTION NASSIMA*/
+
+/* début barre de navigation*/
+.navbar {
+    /* visibility: hidden;
+    margin-left: -100%;*/
+    transition: all ease 500ms;
+
+
 }
 
-.nav-links ul ul {
-    position: absolute;
-    top: 50 px;
-    visibility: hidden;
-    top: 30px;
-}
-
-.nav-links ul li:hover ul {
-    visibility: visible;
-}
-
-.nav-links li:hover {
+.navbar-links {
+    display: none;
+    height: 4rem;
     background-color: var(--secondary-color);
 }
 
-.nav-links ul li ul a:hover {
+.mobile-menu {
+    margin-left: 0;
+    visibility: hidden;
+    background-color: var(--secondary-color);
+
+}
+
+.navbar {
+    width: 100%;
+    height: 2rem;
     color: var(--secondary-color);
-    background-color: white;
+}
+
+
+.menu-hamburger {
+    position: absolute;
+    display: flex;
+    right: 1rem;
+    top: 0.75rem;
+    z-index: 99;
+    width: 2.5rem;
+
+}
+
+.navbar .mobile-first {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    backdrop-filter: blur(7px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2;
+}
+
+.mobile-first a {
+    text-decoration: none;
+    padding-right: 0.65rem;
+
+}
+
+.mobile-first ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.mobile-first ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.navbar .mobile-first ul li {
+    margin: 25px 0;
+
+}
+
+.navbar .mobile-first ul li a {
+    color: var(--secondary-color);
+    font-size: 25px;
+
 }
 
 /*fin de barre de navigation*/
 
 /*footer*/
-footer {
-    flex-shrink: 0;
-    border-top: 1px dashed;
-    width: 100%;
+
+
+footer p {
     background-color: var(--secondary-color);
-    color: white;
-}
-
-/*contenu*/
-
-.contenu-footer {
-    width: 1200px;
-    margin: 0 auto;
+    color: var(--third-color);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: flex-start;
-    font-size: 20px;
-    padding: 50px 0 100px;
-    justify-content: space-around;
-}
-
-.bloc {
-    width: 25%;
-    margin: 0 30px;
-}
-
-/*fin contenu*/
-
-/*bloc media*/
-.liste-media {
-    list-style-type: none;
-}
-
-.liste-media img {
-    width: 40px;
-    margin: 10px 10px;
-}
-
-.liste-media a {
-    text-decoration: none;
-    color: white;
-
+    flex-direction: column;
+    text-align: center;
 }
 
 /*fin footer*/
 
+/*fin footer*/
+/*SECTION NASSIMA*/
+
 /* DÉBUT SECTION PAGE D'ACCUEIL */
 
-main {
+.index-main {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -200,7 +225,9 @@ main {
 }
 
 /*image auto slider*/
-.slides img {
+
+.slide img {
+
     height: 200px;
     width: 200px;
 }
@@ -228,11 +255,13 @@ main {
 }
 
 .slides {
+
     width: calc(200px * 3);
     animation: glisse 10s infinite;
 }
 
 .slide {
+    z-index: 1;
     float: left;
 }
 
@@ -408,9 +437,10 @@ section>h2 {
     max-width: 550px;
 }
 
-main {
+.form-main {
     margin: 0 4%;
 }
+
 
 .pic-description,
 form {
@@ -442,7 +472,9 @@ form {
     margin: 1rem;
 }
 
+
 .pic-description {
+
     line-height: 1.5;
     /* font-size: smaller; */
     width: 100%;
@@ -452,7 +484,9 @@ form {
     margin-top: 16px;
 }
 
+
 .pic-description h4 {
+
     margin-top: 0.3rem;
     margin-bottom: 8px;
     margin-left: 16px;
@@ -466,6 +500,7 @@ form {
 }
 
 .pic-description h4,
+
 p {
     align-self: flex-start;
 }
@@ -488,15 +523,16 @@ p {
     justify-content: center;
     height: 1.9rem;
     margin-top: 0.3rem;
-    margin-right: 0.3rem;
+    margin-right: 1.2rem;
     /* border: 2px black solid; */
 }
 
 .social-button {
     background-color: var(--third-color);
-    border-radius: 6%;
+    border-radius: 6px;
     border-style: none;
-    padding: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    padding-top: 0.35rem;
 }
 
 .social-button a {
@@ -509,7 +545,7 @@ p {
 .social-button:hover {
     outline: none;
     border: 2px solid var(--primary-color);
-    border-radius: 6%;
+    border-radius: 6px;
 }
 
 .input-container {
@@ -538,6 +574,11 @@ input {
     line-height: 1.5;
 }
 
+.input,
+textarea {
+    max-width: 90ch;
+}
+
 .textarea-container {
     height: 10rem;
 }
@@ -553,6 +594,10 @@ textarea {
     margin-bottom: 2rem;
 }
 
+/* .submit:hover {
+    border: 2px solid var(--secondary-color);
+} */
+
 .submit-container {
     align-self: flex-end;
     margin-top: 0.5rem;
@@ -562,6 +607,10 @@ input:focus,
 textarea:focus {
     outline: none;
     border-bottom: 2px solid var(--primary-color);
+}
+
+.submit:focus {
+    border-bottom: none;
 }
 
 input.value {
@@ -574,6 +623,124 @@ input.value {
 /*DEBUT MEDIA QUERIES*/
 
 @media screen and (min-width: 992px) {
+
+
+    /*SECTION NASSIMA*/
+
+    /* barre de navigation*/
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--secondary-color);
+        color: white;
+        width: 100%;
+        height: 4rem;
+    }
+
+    .menu-hamburger {
+        width: 3rem;
+        height: 3rem;
+        display: none;
+    }
+
+    .brand-title {
+        font-size: 1.5rem;
+        margin: 0.5rem;
+        color: var(--primary-color);
+    }
+
+    .navbar-links {
+        display: flex;
+    }
+
+    .navbar-links ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .navbar-links li {
+        list-style: none;
+        position: relative;
+        float: left;
+    }
+
+    .navbar-links ul li a {
+        text-decoration: none;
+        color: var(--primary-color);
+        display: block;
+        justify-content: space-between;
+        text-align: center;
+        width: 150px;
+        height: 25%;
+        font-size: xx-large;
+        margin-right: 200px;
+        margin-top: 17px;
+    }
+
+    .navbar-links li a:hover {
+        color: var(--third-color);
+    }
+
+    .navbar-links ul ul {
+        position: absolute;
+        top: 50px;
+        top: 30px;
+        flex-direction: column;
+        padding: 1.5rem;
+        visibility: hidden;
+        z-index: 99;
+    }
+
+    .navbar-links ul li:hover ul {
+        visibility: visible;
+        display: inline-block;
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        padding: 0px;
+        color: var(--secondary-colo--r);
+        /*background-color: var(--primary-color);*/
+    }
+
+    .sub-project li a {
+        display: block;
+        color: var(--third-color);
+    }
+
+    .sub-project li a:hover {
+        color: var(--third-color);
+        background-color: var(--secondary-color);
+        display: flex;
+        flex-direction: center;
+    }
+
+    .mobile-first {
+        visibility: hidden;
+    }
+
+    /*fin barre de navigation*/
+
+    /*  début footer */
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: transparent;
+        height: auto;
+        width: 100vw;
+        padding-top: 40px;
+        color: #fff;
+    }
+
+    /*fin footer*/
+
+    /* FIN SECTION NASSIMA*/
+
+    /* SECTION KADIR */
 
 
     h1 {
@@ -598,6 +765,8 @@ input.value {
     }
 
     p,
+    a,
+    .submit,
     label,
     .input {
         max-width: 75ch;
@@ -610,7 +779,6 @@ input.value {
     .h2-team {
         margin-bottom: 2rem;
     }
-
 
     .member {
         align-items: center;
@@ -740,6 +908,7 @@ input.value {
         justify-content: center;
         text-align: center;
         margin-top: 2rem;
+
         margin-left: 25%;
         margin-right: 25%;
     }
@@ -782,7 +951,7 @@ input.value {
         max-width: 100%;
     }
 
-    main {
+    .form-main {
         margin: 0 22%;
     }
 
@@ -813,13 +982,20 @@ input.value {
 
     .input-container {
         max-width: 450px;
+        height: 2.5rem;
     }
 
     form {
         align-items: stretch;
     }
 
+    .input,
+    textarea {
+        max-width: 100%;
+    }
+
     .textarea-container {
         max-width: 100%;
     }
+
 }
